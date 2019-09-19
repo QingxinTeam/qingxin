@@ -15,6 +15,11 @@
 	    	controller:'msgCtrl'
 	    })  
 	    
+	     .when('/feel',{
+	    	templateUrl:'ftl/feel.html',
+	    	controller:'feelCtrl'
+	    })  
+	    
 	    .when('/data',{
 	    	templateUrl:'ftl/data.html',
 	    	controller:'dataCtrl'

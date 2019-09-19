@@ -1,73 +1,28 @@
-       ÐÂÔöÍ£ÓÃ´Ê¡¾ÒÔ¿Õ¸ñ·Ö¸ô¡¿£º <textarea ng-model="stopwords" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
-    <button ng-click="addstop()">ÐÂÔöÍ£ÓÃ´Ê</button>
-    <button ng-click="delstop()">É¾³ýÍ£ÓÃ´Ê</button>
-    <button ng-click="addjieba()">ÐÂÔö·Ö´Ê</button>
-    <button ng-click="deljieba()">É¾³ý·Ö´Ê</button>          
-    <br/><br/>
-              ÖØÐÂÑ¡ÔñÖ÷ÌâÊý£º<input ng-model="minK" id="minK" type="text"></input>
-	<button ng-click="send()">Ä£ÐÍÖØÐÂ¼ÆËã</button>
+   <meta charset="utf-8">
+  <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px">    
+       æ–°å¢žè´Ÿé¢æƒ…æ„Ÿè¯ã€æ ¼å¼:è¯|æƒå€¼ï¼Œä»¥ç©ºæ ¼åˆ†éš”ï¼Œå¦‚ï¼š"æŠ•è¯‰|100"ã€‘ï¼š <textarea ng-model="stopwords" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
+    <button ng-click="addneg()">æ–°å¢žè´Ÿé¢è¯</button>
+    <button ng-click="delneg()">åˆ é™¤è´Ÿé¢è¯</button>
 	<br/>
 	<br /> 
 	
-	
-	
-  <div  id="chart-container1" style="width:50%;height:400px;float: left;"></div> 
-
-<div  id="chart-container2" style="width:50%;height:400px;float: left;"></div>  
-    
- <div  style=" width: 100%; overflow-x:auto; overflow-y:auto;float:left">
-<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
-            <thead>
-            <tr>
-               <th>Ö÷Ìâ±àºÅ</th>
-               <th>·ÖÀà</th>
-               <th>¹Ø¼ü×Ö</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="e in list">
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.topic }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.name }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.words }}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    
     <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:left">
 <table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
             <thead>
             <tr>
-               <th>´´½¨Ê±¼ä</th>
-               <th>Í£ÓÃ´Ê</th>
+               <th>åˆ›å»ºæ—¶é—´</th>
+               <th>åœç”¨è¯</th>
+               <th>æƒå€¼</th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="e in list2">
+            <tr ng-repeat="e in list">
                 <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
                 <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.value }}</td>
             </tr>
             </tbody>
         </table>
     </div>
     
-    
-    
-     <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:right">
-<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
-            <thead>
-            <tr>
-               <th>´´½¨Ê±¼ä</th>
-               <th>×Ô¶¨Òå·Ö´Ê</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="e in list3">
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    
+ </div>

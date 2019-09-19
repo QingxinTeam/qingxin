@@ -37,7 +37,7 @@ public class AgentRestController {
 	@RequestMapping(value = "/editWords", produces = "text/html;charset=utf-8")
 	@ResponseBody
 	public String editWords(@RequestBody HashMap<String, String> obj ) {
-		//type:stop|jieba
+		//type:stop|jieba|neg
 		//method:del|add
 		String type=obj.get("type");
 		String methods=obj.get("method");
@@ -50,9 +50,19 @@ public class AgentRestController {
 		List<String>ids=new ArrayList<String>();
 		for(String word:wordlist){
 			HashMap<String,Object> o=new HashMap<String, Object>();
-			o.put("word", word);
-			ids.add(type+word);
-			o.put("type", type);
+			if("neg".equalsIgnoreCase(type)) {
+				String[] w1=word.split("\\|");
+				if(w1.length==2) {
+				   o.put("word", w1[0]);
+				   o.put("value", w1[1]);
+				   o.put("type", type);
+				}
+			}else {
+				o.put("word", word);
+				o.put("type", type);
+			}
+			
+			ids.add(type+o.get("word"));
 			dbre.add(o);
 		}
 		if("add".equalsIgnoreCase(methods)){
@@ -62,9 +72,11 @@ public class AgentRestController {
 				LdaService.deleteData(LdaService.WORD_INDEX_NAME,id);
 			}
 		}
-		
-		Fenci.init();
-		
+		if("neg".equalsIgnoreCase(type)) {
+			EmotionModel.loadEmotionDictory();
+		}else {
+			Fenci.init();
+		}
 		return "success";
 	}
 	
@@ -89,6 +101,21 @@ public class AgentRestController {
 		logger.info("queryStopWord start");
 		HashMap<String,String> param =new HashMap<String, String>();
 		param.put("type", "jieba");
+		List<Map<String, Object>> result=LdaService.queryData(LdaService.WORD_INDEX_NAME,param);
+		
+		for(Map<String, Object> m:result) {
+			Date datestr=DateUtil.StrToDateForPatternAddHour(m.get("crtTime")+"");
+			m.put("crtTime", DateUtil.formatDate(datestr, DateUtil.YYYY_MM_DD_HHMMSS_SSS));
+		}
+		return result;
+	}
+	
+	@RequestMapping(value = "/queryNegWord", produces = "text/html;charset=utf-8")
+	@ResponseBody
+	public List<Map<String, Object>> queryNegWord(@RequestBody HashMap<String, String> obj ) {
+		logger.info("queryNegWord start");
+		HashMap<String,String> param =new HashMap<String, String>();
+		param.put("type", "neg");
 		List<Map<String, Object>> result=LdaService.queryData(LdaService.WORD_INDEX_NAME,param);
 		
 		for(Map<String, Object> m:result) {

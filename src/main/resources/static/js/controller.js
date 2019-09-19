@@ -5,8 +5,7 @@
  	$scope.beginTime = new Date(s).defaultDateTimeFormat();
 	$scope.endTime = new Date(t).defaultDateTimeFormat();
 	
-	
-	 $scope.query = function() {
+	$scope.query = function() {
 		 var obj={"beginTime":$scope.beginTime,"endTime":$scope.endTime};
 		 $http({
 				method : 'POST',
@@ -21,7 +20,52 @@
 			});
 	 }
 	 $scope.query();	  
-    
+  });
+ 
+ 
+ app.controller('feelCtrl', function($scope, $http) {
+	 $scope.query = function() {
+		 var obj={"beginTime":$scope.beginTime,"endTime":$scope.endTime};
+		 $http({
+				method : 'POST',
+				url : 'httpService/queryNegWord',
+				data : JSON.stringify(obj),
+				headers : {
+					'Content-Type' : 'application/json;charset=utf-8',
+					"dataType": "json",
+				}
+			}).success(function(data) {
+				 $scope.list=data;
+			});
+	 }
+	 $scope.query();
+	 
+	 $scope.edit=function(type,method){
+		 var obj={"stopwords":$scope.stopwords,"type":type,"method":method};
+		 $http({
+				method : 'POST',
+				url : 'httpService/editWords',
+				data : obj,
+				headers : {
+					'Content-Type' : 'application/json;charset=utf-8',
+					"dataType": "json",
+				}
+			}).success(function(data) {
+				 alert("success");
+				 $scope.query();
+			});
+	 };
+	 
+	 $scope.addneg=function(){
+		 $scope.edit("neg","add");
+	 };
+	 
+	 $scope.delneg=function(){
+		 $scope.edit("neg","del");
+	 };
+	 
+	 
+	 
   });
  
  
