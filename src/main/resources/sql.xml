@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<sql id="queryPer">
+<![CDATA[
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "topicNum": {
+              "gte": "4",
+              "lte": "50"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "size": 0
+ ,"aggs": {
+   "table_name_term": {
+     "terms": {
+       "field": "topicNum",
+       "size":100
+     },
+     "aggs": {
+       "max_read": {
+         "max": {
+           "field": "perplexity"
+         }
+       }
+ } 
+ }
+   }
+}
+]]>
+</sql>
+
+<sql id="queryNum">
+<![CDATA[
+{
+  
+  "size": 0
+ ,"aggs": {
+   "table_name_term": {
+     "terms": {
+       "field": "topicNum",
+       "size":10
+     }
+ }
+   }
+}
+]]>
+</sql>
+
+
+
+
+</root>

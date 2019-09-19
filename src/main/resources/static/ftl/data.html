@@ -1,0 +1,45 @@
+  <meta charset="utf-8">
+ <div  class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px"  ng-controller="dataCtrl">
+  <div class="col-xs-3">
+      <div class="input-group">
+        <span class="input-group-addon">开　始</span>
+        <input class="form-control form_starttime1" name="StartTime" ng-model="beginTime"  type="text" >
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="input-group">
+        <span class="input-group-addon">结　束</span>
+        <input class="form-control form_endtime1" name="EndTime" ng-model="endTime" type="text" >
+      </div>
+    </div>
+    
+     <button ng-click="query()" >查询</button>
+    <br/><br/>
+    
+ <div  style=" width: 90%; overflow-x:auto; overflow-y:auto;">
+<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
+            <thead>
+            <tr>
+             <th>时间</th>
+             <th>主题</th>
+             <th>情感值</th>
+             <th>状态</th>
+             <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="e in list">
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.topicstr }}</td>
+                 <td style="word-wrad:bread-word;word-break:break-all;">{{ e.feel }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">未处理</td>
+                 <td style="word-wrad:bread-word;word-break:break-all;">
+                 <button id="sendbtn" type="button" class="btn btn-default">处理</button>
+                 </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    </div>
+ 

@@ -1,0 +1,28 @@
+ <meta charset="utf-8">
+  <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px">
+<label for="name">请输入文本：</label>
+                <textarea ng-model="msgtxt" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
+                <button ng-click="sendbtn()" id="sendbtn" type="button" >发送</button>
+                <button ng-click="themebtn()" id="themebtn" type="button" >主题评估</button>
+                <button ng-click="feelbtn()" id="feelbtn" type="button" >情感评估</button>
+
+<br/>                
+<p>交互内容：</p>
+		<hr />             
+
+<div id="contentDiv"></div>
+		<hr /> 
+
+<p>主题评估：</p>
+		<hr />  
+		
+		
+<div id="themeDiv"></div>
+		<hr /> 
+    
+<p>情感评估：</p>
+		<hr />  
+		
+		
+<div id="feelDiv"></div>
+</div>

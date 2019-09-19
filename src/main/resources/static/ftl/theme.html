@@ -1,0 +1,77 @@
+  <meta charset="utf-8">
+ <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px">
+    新增停用词【以空格分隔】： <textarea ng-model="stopwords" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
+    <button ng-click="addstop()">新增停用词</button>
+    <button ng-click="delstop()">删除停用词</button>
+    <button ng-click="addjieba()">新增分词</button>
+    <button ng-click="deljieba()">删除分词</button>          
+    <br/><br/>
+              重新选择主题数：<input ng-model="minK" id="minK" type="text"></input>
+	<button ng-click="send()">模型重新计算</button>
+	<br/>
+	<br/> 
+	
+	
+	
+  <div  id="chart-container1" style="width:50%;height:400px;float: left;"></div> 
+
+<div  id="chart-container2" style="width:50%;height:400px;float: left;"></div>  
+    
+ <div  style=" width: 100%; overflow-x:auto; overflow-y:auto;float:left">
+<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
+            <thead>
+            <tr>
+               <th>主题编号</th>
+               <th>分类</th>
+               <th>关键字</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="e in list">
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.topic }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.name }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.words }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:left">
+<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
+            <thead>
+            <tr>
+               <th>创建时间</th>
+               <th>停用词</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="e in list2">
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
+     <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:right">
+<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
+            <thead>
+            <tr>
+               <th>创建时间</th>
+               <th>自定义分词</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="e in list3">
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
+                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    </div>
+    
