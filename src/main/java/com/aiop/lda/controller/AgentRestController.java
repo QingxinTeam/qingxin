@@ -160,9 +160,7 @@ public class AgentRestController {
 		String msgstr=obj.get("msgstr");
 		logger.info("theme start.msgtxt="+msgtxt);
 		double result=EmotionModel.predict(msgtxt);
-		if(result<0) {
-			saveEs(msgtxt,msgstr ,result);
-		}
+		saveEs(msgtxt,msgstr ,result);
 		logger.info("theme end.result="+result);
 		return result+"";
 	}
@@ -177,8 +175,10 @@ public class AgentRestController {
 		Date endTime=DateUtil.StrToDateForPattern(endTimeStr, DateUtil.YYYY_MM_DD_HHMMSS_SSS);
 		beginTimeStr=DateUtil.DateToUTCstr(beginTime);
 		endTimeStr=DateUtil.DateToUTCstr(endTime);
+		HashMap<String,String> param =new HashMap<String, String>();
+		param.put("neg.keyword", "负面情绪");
 		
-		List<Map<String, Object>> result=LdaService.queryDataByTime(LdaService.LOG_INDEX_NAME,beginTimeStr,endTimeStr);
+		List<Map<String, Object>> result=LdaService.queryDataByTime(LdaService.LOG_INDEX_NAME,param,beginTimeStr,endTimeStr);
 		for(Map<String, Object> m:result) {
 			Date datestr=DateUtil.StrToDateForPatternAddHour(m.get("crtTime")+"");
 			m.put("crtTime", DateUtil.formatDate(datestr, DateUtil.YYYY_MM_DD_HHMMSS_SSS));
@@ -199,6 +199,14 @@ public class AgentRestController {
 	public Object queryNum(HttpServletRequest request) {
 		logger.info("/queryNum start");
 		JSONObject datas=(JSONObject) ReportRequest.queryNum();
+		return datas;
+	}
+	
+	@RequestMapping(value = "/queryFeel", produces = "text/html;charset=utf-8")
+	@ResponseBody
+	public Object queryFeel(HttpServletRequest request) {
+		logger.info("/queryFeel start");
+		JSONObject datas=(JSONObject) ReportRequest.queryFeel();
 		return datas;
 	}
 	
@@ -243,6 +251,13 @@ public class AgentRestController {
 		o.put("topicstr",topicstr);
 		o.put("feel",result);
 		o.put("msgstr",msgstr);
+		if(result>0) {
+			o.put("neg", "正面情绪");
+		}else if(result==0){
+			o.put("neg", "正常");
+		}else if(result<0) {
+			o.put("neg", "负面情绪");
+		}
 		dbre.add(o);
 		LdaService.insertBatchLineForMap("zxj_lda_log", dbre);
 	}

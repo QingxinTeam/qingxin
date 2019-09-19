@@ -139,5 +139,54 @@ public class ReportRequest {
 	}
 	
 	
+	@SuppressWarnings("unchecked")
+	public static Object queryFeel(){
+		String httpurl="http://"+esHost+":9200/zxj_lda_log/_search";
+		String param=sqls.get("queryFeel");
+		String s= HttpClient.doPost(httpurl,param);
+		JSONObject jsonObject=JSONObject.parseObject(s);
+		JSONObject resultObj=new JSONObject();
+		if(jsonObject!=null && jsonObject.containsKey("aggregations") && jsonObject.getJSONObject("aggregations").containsKey("table_name_term")){
+			JSONObject aggObject=jsonObject.getJSONObject("aggregations").getJSONObject("table_name_term");
+			List<JSONObject> alist=(List<JSONObject>) aggObject.get("buckets");
+			
+			List<JSONObject> results=new ArrayList<JSONObject>();
+			
+			
+			for(JSONObject o : alist){
+				JSONObject tmp= new JSONObject();
+				String topicNum=o.getString("key");
+				Integer count=o.getIntValue("doc_count");
+				tmp.put("label", topicNum);
+				tmp.put("value", count);
+				results.add(tmp);
+			}
+			if(results.size()>50){
+				results=results.subList(0, 50);
+			}
+			
+			
+			////////////////////二次转化/////////////////
+			List<String> legends=new ArrayList<String>();
+			legends.add("分类占比");
+			
+			List<String> cates=new ArrayList<String>();
+			List<JSONObject> datas=new ArrayList<JSONObject>();
+			
+			for(JSONObject o : results){
+				cates.add(o.getString("label"));
+				JSONObject t= new JSONObject();
+				t.put("name", o.getString("label"));
+				t.put("value",o.getInteger("value"));
+				datas.add(t);
+			}
+			resultObj.put("legends", legends);
+			resultObj.put("dataset", datas);
+			resultObj.put("category", cates);
+		}
+		return resultObj;
+	}
+	
+	
 
 }

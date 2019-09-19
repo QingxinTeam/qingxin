@@ -59,8 +59,8 @@ public class LdaService {
 		 return api.queryEsIndex(index,ESConstants.DATA,param);
 	}
 	
-	public static List<Map<String, Object>> queryDataByTime(String index,String startTime,String endTime){
-		 return api.queryEsIndexByTime(index,ESConstants.DATA,null,startTime,endTime);
+	public static List<Map<String, Object>> queryDataByTime(String index,HashMap<String,String> param,String startTime,String endTime){
+		 return api.queryEsIndexByTime(index,ESConstants.DATA,param,startTime,endTime);
 		
 	}
 	

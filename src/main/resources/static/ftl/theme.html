@@ -5,7 +5,6 @@
     <button ng-click="delstop()">删除停用词</button>
     <button ng-click="addjieba()">新增分词</button>
     <button ng-click="deljieba()">删除分词</button>          
-    <br/><br/>
               重新选择主题数：<input ng-model="minK" id="minK" type="text"></input>
 	<button ng-click="send()">模型重新计算</button>
 	<br/>
@@ -13,11 +12,9 @@
 	
 	
 	
-  <div  id="chart-container1" style="width:50%;height:400px;float: left;"></div> 
-
-<div  id="chart-container2" style="width:50%;height:400px;float: left;"></div>  
-    
- <div  style=" width: 100%; overflow-x:auto; overflow-y:auto;float:left">
+  <div  id="chart-container1" style="width:60%;height:400px;float: left;"></div> 
+  <br/> <br/> <br/>
+  <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
 <table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
             <thead>
             <tr>
@@ -35,9 +32,13 @@
             </tbody>
         </table>
     </div>
-    
-    
-    <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:left">
+
+<div  id="chart-container2" style="width:60%;height:400px;float: left;"></div>
+
+
+      
+
+ <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
 <table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
             <thead>
             <tr>
@@ -56,7 +57,7 @@
     
     
     
-     <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:right">
+     <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
 <table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
             <thead>
             <tr>
@@ -73,5 +74,9 @@
         </table>
     </div>
     
+    
+ 
+    
+   
     </div>
     

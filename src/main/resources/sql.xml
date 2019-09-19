@@ -55,6 +55,24 @@
 </sql>
 
 
+<sql id="queryFeel">
+<![CDATA[
+{
+  
+  "size": 0
+ ,"aggs": {
+   "table_name_term": {
+     "terms": {
+       "field": "neg.keyword",
+       "size":10
+     }
+ }
+   }
+}
+]]>
+</sql>
+
+
 
 
 </root>

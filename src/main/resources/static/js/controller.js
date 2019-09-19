@@ -1,6 +1,6 @@
  app.controller('dataCtrl', function($scope, $http) {
 	 var today = new Date();
-     var s = today.getTime() - 1000 * 60 * 60*24*15; // 15天
+     var s = today.getTime() - 1000 * 60 * 60*24*1; // 15天
      var t = today.getTime();
  	$scope.beginTime = new Date(s).defaultDateTimeFormat();
 	$scope.endTime = new Date(t).defaultDateTimeFormat();
@@ -63,6 +63,18 @@
 	 $scope.delneg=function(){
 		 $scope.edit("neg","del");
 	 };
+	 
+	 
+	 $scope.basequery = function() {
+	    var obj={};
+		 var url = "httpService/queryFeel";
+	    	var divname="chart-container1";
+	    	var caption="web接口调用次数";
+	    	var myChart2=echarts.init(document.getElementById(divname));
+	    	readchart2(obj,url,divname,caption,myChart2,$scope);
+	    }
+	    
+	    $scope.basequery();
 	 
 	 
 	 

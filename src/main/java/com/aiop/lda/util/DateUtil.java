@@ -5,7 +5,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.Date;
-import java.util.TimeZone;
 
 public class DateUtil {
 	public static final String YYYY_MM_DD_HHMMSS_SSS = "yyyy-MM-dd HH:mm:ss";
@@ -45,7 +44,6 @@ public class DateUtil {
 	
 	public static String DateToUTCstr(Date time){
 		SimpleDateFormat dateFormat=new SimpleDateFormat(YYYY_MM_DD_HHMMSS_SSST);
-		dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
 		return dateFormat.format(time);
 		
 	}
