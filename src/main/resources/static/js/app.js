@@ -5,6 +5,11 @@
  app.config(['$routeProvider',
 		 function($routeProvider){
 	 $routeProvider
+	 
+	   .when('/home',{
+	    	templateUrl:'ftl/home.html',
+	    	controller:'homeCtrl'
+	    })  
 	    .when('/index',{
 	    	templateUrl:'ftl/theme.html',
 	    	controller:'themeCtrl'
@@ -25,7 +30,7 @@
 	    	controller:'dataCtrl'
 	    })  
 	    .otherwise({
-	    	redirectTo:'/'
+	    	redirectTo:'/home'
 	    		});
  }]);
  

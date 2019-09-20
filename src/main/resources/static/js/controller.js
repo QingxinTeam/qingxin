@@ -22,6 +22,10 @@
 	 $scope.query();	  
   });
  
+ app.controller('homeCtrl', function($scope, $http) {
+	  
+  });
+ 
  
  app.controller('feelCtrl', function($scope, $http) {
 	 $scope.query = function() {

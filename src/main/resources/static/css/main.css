@@ -3,6 +3,18 @@
     }
  
     div.container-fluid {}
+    
+    .banner-info {
+    text-align: center;
+    margin-top: 8em;
+    color: white;
+}
+
+.owl-carousel {
+    background: url(../img/banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 300px;
+}
  
     div.menuDiv {
       width: 230px;
