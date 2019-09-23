@@ -1,28 +1,53 @@
  <meta charset="utf-8">
-  <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px">
-<label for="name">请输入文本：</label>
-                <textarea ng-model="msgtxt" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
-                <button ng-click="sendbtn()" id="sendbtn" type="button" >发送</button>
-                <button ng-click="themebtn()" id="themebtn" type="button" >主题评估</button>
-                <button ng-click="feelbtn()" id="feelbtn" type="button" >情感评估</button>
 
-<br/>                
-<p>交互内容：</p>
-		<hr />             
+  <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px;">
+  
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row" style="background-color:white;margin-top: 10px;">
+  <div class="col-xs-12 col-md-12">
+                <textarea ng-model="msgtxt" id="msgtxt" class="form-control msgtextarea" rows="2" cols="100"></textarea>
+                <input class="btn btn-success msgtopbutton"   ng-click="sendbtn()" id="sendbtn" type="button" value="模拟用户说话"></input>
+                <textarea ng-model="msgtxt02" id="msgtxt02" class="form-control msgtextarea" rows="2" cols="100"></textarea>
+                <input class="btn btn-success msgtopbutton" ng-click="sendbtn02()" id="sendbtn02" type="button" value="模拟客服说话"></input>
+                <input class="btn btn-success msgtopbutton"  ng-click="finish()" id="finish" type="button" value="结束会话"></input>
+  </div>
+</div>
 
-<div id="contentDiv"></div>
-		<hr /> 
+
+<div class="row" style="background-color:white;margin-top: 10px;">
+ <span class="spanrow1">即时对话监控</span>
+ <span class="spanrow12" >&#12288;实时情绪查询&#12288;</span>
+<hr style="width:95%; color:#09060e;" />
+  <div class="col-xs-12 col-md-6 divrightline" >
+  <div id="contentDiv"></div>
+  </div>
+  <div class="col-xs-6 col-md-6">
+<ul>
+   <li>
+    <button type="button" ng-class="style1" id ="userfeelDiv" class=" btn mgsfeel" >客户情绪：</span> 
+    </li>
+    <br/> 
+     <li>
+    <button type="button" ng-class="style2" class="btn mgsfeel" id="feelDiv"  >坐席情绪：</span> 
+    </li> 
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
 
 <p>主题评估：</p>
 		<hr />  
 		
 		
 <div id="themeDiv"></div>
-		<hr /> 
-    
-<p>情感评估：</p>
-		<hr />  
+
+		  <div id="feelDiv">
+  </div>
 		
-		
-<div id="feelDiv"></div>
+
 </div>

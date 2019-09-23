@@ -146,7 +146,8 @@ public class Fenci
 				}
 			}
 			catch (Exception e){
-				System.out.println("Read Dataset Error: " + e.getMessage());
+				System.out.println("Read Dataset Error: " + e.getMessage(
+						));
 				e.printStackTrace();
 			}
 	}
@@ -155,8 +156,8 @@ public class Fenci
 	
     public static void main( String[] args )
     {     
-//    	loadfileToEs();
-    	System.out.println(fenci("我的爱人买单吧赵1小晶SSS"));
+    	loadfileToEs();
+//    	System.out.println(fenci("我的爱人买单吧赵1小晶SSS"));
     }
     
 }

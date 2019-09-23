@@ -155,14 +155,14 @@ public class AgentRestController {
 	
 	@RequestMapping(value = "/feel", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public String feel(@RequestBody HashMap<String, String> obj) {
+	public double feel(@RequestBody HashMap<String, String> obj) {
 		String msgtxt=obj.get("msgtxt");
 		String msgstr=obj.get("msgstr");
 		logger.info("theme start.msgtxt="+msgtxt);
 		double result=EmotionModel.predict(msgtxt);
 		saveEs(msgtxt,msgstr ,result);
 		logger.info("theme end.result="+result);
-		return result+"";
+		return result;
 	}
 	
 	@RequestMapping(value = "/querylog", produces = "text/html;charset=utf-8")

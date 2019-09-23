@@ -87,18 +87,33 @@
  
  
  app.controller('msgCtrl', function($scope, $http) {
+	 $scope.style1="btn-default";
+	 $scope.style2="btn-default";
 	 $scope.sendbtn=function(){
-		  $("#contentDiv").append(getTime()+"| <label class='msgcss' >"+$scope.msgtxt+"</label> <br/>");
+		  $("#contentDiv").append("<div ><span class='fontlarge'>客户: </span><span class='msgspandetail'>"+$scope.msgtxt+"</span><br/></span><span style='color: gray;'>"+getTime()+"</span></div>");
 		  $("#msgtxt").val("");
+//		  $scope.themebtn();
+		  $scope.feelbtn("0",$scope.msgtxt);
+	  };
+	  
+	  $scope.sendbtn02=function(){
+		  $("#contentDiv").append("<div style='text-align:right'><span class='msgspandetail' >"+$scope.msgtxt02+"</span><span class='fontlarge' >:坐席</span><br/><span style='color: gray;'>"+getTime()+"</span></div>");
+		  $("#msgtxt02").val("");
+//		  $scope.themebtn();
+		  $scope.feelbtn("1",$scope.msgtxt02);
+	  };
+	  
+	  $scope.finish=function(){
+		  $("#contentDiv").html("");
+		  $("#msgtxt").val("");
+		  $("#themeDiv").html("");
+		  $("#feelDiv").html("");
 	  };
 	 
 	 $scope.themebtn=function(){
-		  var result="";
-		  $(".msgcss").each(function(){
-			  result=result+$(this).text()+","
-		  });
-		  alert(result);
-		  var obj={"msgtxt":result};
+		 $scope.style1="btn-default";
+		 $scope.style2="btn-default";
+		  var obj={"msgtxt":$scope.msgtxt};
 		  $http({
 						method : 'POST',
 						url : 'httpService/theme',
@@ -113,14 +128,11 @@
 	  };
 	  
 	  
-	  $scope.feelbtn=function(){
-		  var result="";
-		  $(".msgcss").each(function(){
-			  result=result+$(this).text()+","
-		  });
-		  alert(result);
+	  $scope.feelbtn=function(usertype,msgtxt){
+		 
+		
 		  msgstr=$("#contentDiv").html();
-		  var obj={"msgtxt":result,"msgstr":msgstr};
+		  var obj={"msgtxt":msgtxt,"msgstr":msgstr};
 		 $http({
 					method : 'POST',
 					url : 'httpService/feel',
@@ -130,7 +142,29 @@
 						"dataType": "json",
 					}
 				}).success(function(data) {
-					$("#feelDiv").html(data)
+					fdata=parseFloat(data);
+					var feel="中性";
+					if(fdata>0){
+						feel="满意";
+					}else if(fdata<0){
+						feel="不满意";
+						
+					}
+					
+					if(usertype=="0"){
+						 $scope.style1="btn-default";
+						$("#userfeelDiv").html("客户情绪："+feel);
+						if(fdata<0){
+							$scope.style1="btn-danger";
+						}
+					}else if(usertype=="1"){
+						  $scope.style2="btn-default";
+						$("#feelDiv").html("坐席情绪："+feel);
+						if(fdata<0){
+							$scope.style2="btn-danger";
+						}
+						
+					}
 				});
 			 
 	  };

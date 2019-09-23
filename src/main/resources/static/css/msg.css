@@ -1,0 +1,53 @@
+.msgtextarea{
+	width:30%;
+	display:inline;
+	margin: 0px;
+}
+
+.msgtopbutton{
+	margin-top: -45px;
+}
+
+.spanrow1{
+	font-size: large;
+	font-weight: 700;
+	margin-left:18px;
+	margin-top:10px;
+}
+
+.spanrow12{
+	font-size: large;
+	float: right;
+	margin-right:18px;
+	margin-top:10px;
+	background-color: #146082;    
+	color: white; 
+	border-radius: 20px;
+}
+
+.divrightline{
+	border-right: solid;
+	border-width: 1px;
+	 border-color: lightgray;
+}
+
+.msgspandetail{
+	padding: 10px;
+	font-size: large;
+	margin: 10px;
+	background-color: #cdcdcd;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fontlarge{
+	font-size: large;
+	font-weight: 700;
+}
+
+.mgsfeel{
+	padding: 10px;
+	font-size: large;
+	border-radius: 10px;
+	border: 1px solid gray;
+}

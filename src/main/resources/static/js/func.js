@@ -15,7 +15,7 @@ var getTime=function(){
 	var m=myDate.getMinutes();          //获取当前分钟数(0-59)
 	var s=myDate.getSeconds();
 
-	var now=year+'-'+getNow(month)+"-"+getNow(date)+" "+getNow(h)+':'+getNow(m)+":"+getNow(s);
+	var now=getNow(h)+':'+getNow(m)+":"+getNow(s);
 	return now;
 }
 
