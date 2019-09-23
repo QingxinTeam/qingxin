@@ -92,7 +92,7 @@
 	 $scope.sendbtn=function(){
 		  $("#contentDiv").append("<div ><span class='fontlarge'>客户: </span><span class='msgspandetail'>"+$scope.msgtxt+"</span><br/></span><span style='color: gray;'>"+getTime()+"</span></div>");
 		  $("#msgtxt").val("");
-//		  $scope.themebtn();
+		  $scope.themebtn();
 		  $scope.feelbtn("0",$scope.msgtxt);
 	  };
 	  

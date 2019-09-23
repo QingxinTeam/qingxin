@@ -145,11 +145,19 @@ public class AgentRestController {
 		String msgtxt=obj.get("msgtxt");
 		logger.info("theme start.msgtxt="+msgtxt);
 		double[] dist=LDAPredictor.theme(msgtxt);
-		String result="";
+		String result="",resulttheme="";
+		double maxd=0;
+		int i=0,maxi=0;
 		for (double d : dist) {
+			i++;
+			if(d>maxd) {
+				maxd=d;
+				maxi=i;
+			}
 			result=result+" "+Math.round(LDAUtils.baoliu(d,7)*10000)/100 + "% ";
 		}
-		logger.info("theme end.result="+result);
+		resulttheme=maxi+"";
+		logger.info("theme end.result="+result+":"+resulttheme);
 		return result;
 	}
 	
@@ -158,10 +166,10 @@ public class AgentRestController {
 	public double feel(@RequestBody HashMap<String, String> obj) {
 		String msgtxt=obj.get("msgtxt");
 		String msgstr=obj.get("msgstr");
-		logger.info("theme start.msgtxt="+msgtxt);
+		logger.info("feel start.msgtxt="+msgtxt);
 		double result=EmotionModel.predict(msgtxt);
 		saveEs(msgtxt,msgstr ,result);
-		logger.info("theme end.result="+result);
+		logger.info("feel end.result="+result);
 		return result;
 	}
 	

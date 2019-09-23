@@ -50,4 +50,14 @@
 	font-size: large;
 	border-radius: 10px;
 	border: 1px solid gray;
+	    margin: 10px;
+}
+
+.huaxiang{
+	padding: 10px;
+	font-size: large;
+	background-color: #ffccff3b;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 10px;
 }
