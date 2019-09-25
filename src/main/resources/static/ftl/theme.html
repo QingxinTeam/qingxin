@@ -1,82 +1,57 @@
   <meta charset="utf-8">
  <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px">
-    新增停用词【以空格分隔】： <textarea ng-model="stopwords" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
-    <button ng-click="addstop()">新增停用词</button>
-    <button ng-click="delstop()">删除停用词</button>
-    <button ng-click="addjieba()">新增分词</button>
-    <button ng-click="deljieba()">删除分词</button>          
-              重新选择主题数：<input ng-model="minK" id="minK" type="text"></input>
-	<button ng-click="send()">模型重新计算</button>
+              重新选择主题数：<input ng-model="minK" id="minK" type="text" class="form-control" style="width:20%;display: inline;"></input>
+	<button class="btn btn-default" style="background-color:#97a098;color:white;border: 0px;" ng-click="send()">模型重新计算</button>
 	<br/>
 	<br/> 
 	
 	
+
 	
-  <div  id="chart-container1" style="width:60%;height:400px;float: left;"></div> 
-  <br/> <br/> <br/>
-  <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
-<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
-            <thead>
-            <tr>
-               <th>主题编号</th>
-               <th>分类</th>
-               <th>关键字</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="e in list">
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.topic }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.name }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.words }}</td>
-            </tr>
-            </tbody>
-        </table>
+  <div  style=" width: 100%; overflow-x:auto; overflow-y:auto;float:left;background-color:white;">
+  
+  <div class="table-box" style="margin: 20px;">
+    <div id="toolbar">
+        <button id="button" class="btn btn-default" style="background-color:#1caf27;color:white;border: 0px;"> <span class="glyphicon glyphicon-edit"></span> 修改</button>
+         <button id="searchbtn" class="btn btn-default" style="background-color:#97a098;color:white;border: 0px;"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+        <button id="getTableData" class="btn btn-default" style="background-color:#b9c135;color:white;border: 0px;"> <span class="glyphicon glyphicon-download-alt"></span> 导出</button>
     </div>
+    <table id="table"></table>
+</div>
 
-<div  id="chart-container2" style="width:60%;height:400px;float: left;"></div>
-
-
-      
-
- <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
-<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
-            <thead>
-            <tr>
-               <th>创建时间</th>
-               <th>停用词</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="e in list2">
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
-            </tr>
-            </tbody>
-        </table>
     </div>
     
     
-    
-     <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
-<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
-            <thead>
-            <tr>
-               <th>创建时间</th>
-               <th>自定义分词</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="e in list3">
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
-            </tr>
-            </tbody>
-        </table>
+     <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:left;background-color:white;">
+  
+  <div class="table-box" style="margin: 20px;">
+    <div id="toolbar02">
+        <button id="addbutton02" class="btn btn-default" style="background-color:#391caf;color:white;border: 0px;">  <span class="glyphicon glyphicon-plus"></span> 新增</button>
+         <button id="delbutton02" class="btn btn-default" style="background-color:red;color:white;border: 0px;"> <span class="glyphicon glyphicon-trash"></span> 删除</button>
+         <button id="searchbtn" class="btn btn-default" style="background-color:#97a098;color:white;border: 0px;"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+        <button id="getTableData02" class="btn btn-default" style="background-color:#b9c135;color:white;border: 0px;"> <span class="glyphicon glyphicon-download-alt"></span> 导出</button>
+    </div>
+    <table id="table02"></table>
+</div>
+
     </div>
     
-    
- 
-    
+    <div  style=" width: 50%; overflow-x:auto; overflow-y:auto;float:left;background-color:white;">
+  
+  <div class="table-box" style="margin: 20px;">
+    <div id="toolbar03">
+        <button id="addbutton03" class="btn btn-default" style="background-color:#391caf;color:white;border: 0px;">
+          <span class="glyphicon glyphicon-plus"></span> 新增</button>
+         <button id="delbutton03" class="btn btn-default" style="background-color:red;color:white;border: 0px;">
+         <span class="glyphicon glyphicon-trash"></span> 删除</button>
+         <button id="searchbtn" class="btn btn-default" style="background-color:#97a098;color:white;border: 0px;"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+        <button id="getTableData03" class="btn btn-default" style="background-color:#b9c135;color:white;border: 0px;">
+     <span class="glyphicon glyphicon-download-alt"></span> 导出</button>
+    </div>
+    <table id="table03"></table>
+</div>
+
+    </div>
    
     </div>
     

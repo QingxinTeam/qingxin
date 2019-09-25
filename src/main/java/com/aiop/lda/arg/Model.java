@@ -393,6 +393,7 @@ public class Model implements Serializable{
 	public boolean saveModelTwords(){
 		try{
 			List<HashMap<String,Object>> datas=new ArrayList<HashMap<String,Object>>();
+			List<String>ids=new ArrayList<String>();
 			
 			if (twords > V){
 				twords = V;
@@ -419,6 +420,7 @@ public class Model implements Serializable{
 						text2.append(word+" ");
 					}
 				}
+				ids.add(k+1+"");
 				HashMap<String,Object> tmpdata=new HashMap<String, Object>();
 				tmpdata.put("topic", k+1);
 				tmpdata.put("wordr", text.toString());
@@ -426,7 +428,7 @@ public class Model implements Serializable{
 				datas.add(tmpdata);
 			} //end foreach topic	
 			
-		   LdaService.insertBatchLineForMap(LdaService.TWORDS_INDEX_NAME, datas);		
+		   LdaService.insertBatchLineForMap(LdaService.TWORDS_INDEX_NAME, ids,datas);		
 		}
 		catch(Exception e){
 			System.out.println("Error while saving model twords: " + e.getMessage());

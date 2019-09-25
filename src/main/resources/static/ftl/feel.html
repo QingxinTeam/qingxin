@@ -1,33 +1,22 @@
    <meta charset="utf-8">
   <div class="form-group" style="width: 80%;margin-top: 60px; float:left;margin-left: 10px">    
-       新增负面情感词【格式:词|权值，以空格分隔，如："投诉|100"】： <textarea ng-model="stopwords" id="msgtxt" class="form-control" rows="3" cols="100" style="display:inline;margin: 0px;"></textarea>
-    <button ng-click="addneg()">新增负面词</button>
-    <button ng-click="delneg()">删除负面词</button>
-	<br/>
-	<br /> 
 	
-	
-	
-	 <div  id="chart-container1" style="width:60%;height:400px;float: left;"></div> 
-    <div  style=" width: 40%; overflow-x:auto; overflow-y:auto;float:left">
-<table class="table table-bordered table-condensed" style="color: wheat;  background-color: #333;">
-            <thead>
-            <tr>
-               <th>创建时间</th>
-               <th>停用词</th>
-               <th>权值</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="e in list">
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.crtTime }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.word }}</td>
-                <td style="word-wrad:bread-word;word-break:break-all;">{{ e.value }}</td>
-            </tr>
-            </tbody>
-        </table>
+		
+  <div  style=" width: 100%; overflow-x:auto; overflow-y:auto;float:left;background-color:white;">
+  
+  <div class="table-box" style="margin: 20px;">
+    <div id="toolbar">
+        <button id="addbutton" class="btn btn-default" style="background-color:#391caf;color:white;border: 0px;">  <span class="glyphicon glyphicon-plus"></span> 新增</button>
+         <button id="delbutton" class="btn btn-default" style="background-color:red;color:white;border: 0px;"> <span class="glyphicon glyphicon-trash"></span> 删除</button>
+         <button id="searchbtn" class="btn btn-default" style="background-color:#97a098;color:white;border: 0px;"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+        <button id="getTableData" class="btn btn-default" style="background-color:#b9c135;color:white;border: 0px;"> <span class="glyphicon glyphicon-download-alt"></span> 导出</button>
+        <button id="sendbtn" class="btn btn-default" style="background-color:#b9c135;color:white;border: 0px;"> <span class="glyphicon glyphicon-ok"></span> 提交</button>
+     </div>
+    <table id="table"></table>
+</div>
+
     </div>
-    
+	
    
     
  </div>

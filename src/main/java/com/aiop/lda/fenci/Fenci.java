@@ -44,14 +44,14 @@ public class Fenci
             WordDictionary.getInstance().loadUserDict(path);
             
             
-			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("src/main/resources/stopwords.txt"), "utf-8"));
-			//read number of document
-			String line=reader.readLine();
-			while(line!=null) {
-				stopwords.add(line);
-				line=reader.readLine();
-			}
-			reader.close();
+//			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("src/main/resources/stopwords.txt"), "utf-8"));
+//			//read number of document
+//			String line=reader.readLine();
+//			while(line!=null) {
+//				stopwords.add(line);
+//				line=reader.readLine();
+//			}
+//			reader.close();
 			param =new HashMap<String, String>();
 			param.put("type", "stop");
 			result=LdaService.queryData(LdaService.WORD_INDEX_NAME,param);
@@ -78,10 +78,6 @@ public class Fenci
 		}
 		//空格制表符过滤
 		if(!ci.matcher(t).find()){
-			return false;
-		}
-		//去掉长度为1的字符
-		if(t.length()<2){
 			return false;
 		}
 		return true;
@@ -156,8 +152,8 @@ public class Fenci
 	
     public static void main( String[] args )
     {     
-    	loadfileToEs();
-//    	System.out.println(fenci("我的爱人买单吧赵1小晶SSS"));
+//    	loadfileToEs();
+    	System.out.println(fenci("我很不满意"));
     }
     
 }

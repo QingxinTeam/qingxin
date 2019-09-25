@@ -86,6 +86,14 @@ public class ReportRequest {
 	
 	@SuppressWarnings("unchecked")
 	public static Object queryNum(){
+		List<Map<String, Object>> result=LdaService.queryData(LdaService.TWORDS_INDEX_NAME);
+		Collections.sort(result, new Comparator<Map<String, Object>>() {
+			@Override
+			public int compare(Map<String, Object> o1, Map<String, Object> o2) {
+				return (int)o1.get("topic")-(int)o2.get("topic");
+			}
+		});
+		
 		String httpurl="http://"+esHost+":9200/zxj_lda_max_theta/_search";
 		String param=sqls.get("queryNum");
 		String s= HttpClient.doPost(httpurl,param);
@@ -94,24 +102,16 @@ public class ReportRequest {
 		if(jsonObject!=null && jsonObject.containsKey("aggregations") && jsonObject.getJSONObject("aggregations").containsKey("table_name_term")){
 			JSONObject aggObject=jsonObject.getJSONObject("aggregations").getJSONObject("table_name_term");
 			List<JSONObject> alist=(List<JSONObject>) aggObject.get("buckets");
-			
 			List<JSONObject> results=new ArrayList<JSONObject>();
-			
 			
 			for(JSONObject o : alist){
 				JSONObject tmp= new JSONObject();
-				Long topicNum=o.getLongValue("key");
+				int topicNum=o.getIntValue("key");
 				Integer count=o.getIntValue("doc_count");
-				tmp.put("label", topicNum);
+				tmp.put("label", result.get(topicNum-1).get("topicname"));
 				tmp.put("value", count);
 				results.add(tmp);
 			}
-			Collections.sort(results, new Comparator<JSONObject>() {
-				@Override
-				public int compare(JSONObject o1, JSONObject o2) {
-					return o1.getIntValue("label")-o2.getIntValue("label");
-				}
-			});
 			if(results.size()>50){
 				results=results.subList(0, 50);
 			}

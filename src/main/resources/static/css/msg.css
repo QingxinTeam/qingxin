@@ -61,3 +61,21 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 10px;
 }
+
+
+.liucheng_h{
+	padding: 10px;
+	font-size: large;
+	background-color: #ffccff3b;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 10px;
+	display: block;
+}
+
+.liucheng{
+	font-size: medium;
+	border-radius: 10px;
+	margin: 10px;
+	display: block;
+}

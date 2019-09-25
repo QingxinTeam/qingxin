@@ -29,6 +29,10 @@
 	    	templateUrl:'ftl/data.html',
 	    	controller:'dataCtrl'
 	    })  
+	     .when('/monitor',{
+	    	templateUrl:'ftl/monitor.html',
+	    	controller:'monitorCtrl'
+	    })  
 	    .otherwise({
 	    	redirectTo:'/home'
 	    		});

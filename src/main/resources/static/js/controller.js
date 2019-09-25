@@ -5,21 +5,8 @@
  	$scope.beginTime = new Date(s).defaultDateTimeFormat();
 	$scope.endTime = new Date(t).defaultDateTimeFormat();
 	
-	$scope.query = function() {
-		 var obj={"beginTime":$scope.beginTime,"endTime":$scope.endTime};
-		 $http({
-				method : 'POST',
-				url : 'httpService/querylog',
-				data : JSON.stringify(obj),
-				headers : {
-					'Content-Type' : 'application/json;charset=utf-8',
-					"dataType": "json",
-				}
-			}).success(function(data) {
-				 $scope.list=data;
-			});
-	 }
-	 $scope.query();	  
+	 var obj={"beginTime":$scope.beginTime,"endTime":$scope.endTime};
+	 btabledata($http,obj);
   });
  
  app.controller('homeCtrl', function($scope, $http) {
@@ -27,25 +14,36 @@
   });
  
  
+ app.controller('monitorCtrl', function($scope, $http) {
+	 $scope.basequery = function() {
+	    	var obj={};
+	    	
+	    	var url = "httpService/queryPer";
+	    	var divname="chart-container1";
+	    	var caption="web接口调用次数";
+	    	var myChart1=echarts.init(document.getElementById(divname));
+	    	readchart3(obj,url,divname,caption,myChart1);
+	    	
+	    	var url = "httpService/queryNum";
+	    	var divname="chart-container2";
+	    	var caption="web接口调用次数";
+	    	var myChart2=echarts.init(document.getElementById(divname));
+	    	readchart2(obj,url,divname,caption,myChart2,$scope);
+
+	        var url = "httpService/queryFeel";
+		    var divname = "chart-container3";
+		    var caption = "web接口调用次数";
+		    var myChart2 = echarts.init(document.getElementById(divname));
+		    readchart2(obj, url, divname, caption, myChart2, $scope);
+	    	
+	    };
+	    
+	    $scope.basequery();
+ });
+
  app.controller('feelCtrl', function($scope, $http) {
-	 $scope.query = function() {
-		 var obj={"beginTime":$scope.beginTime,"endTime":$scope.endTime};
-		 $http({
-				method : 'POST',
-				url : 'httpService/queryNegWord',
-				data : JSON.stringify(obj),
-				headers : {
-					'Content-Type' : 'application/json;charset=utf-8',
-					"dataType": "json",
-				}
-			}).success(function(data) {
-				 $scope.list=data;
-			});
-	 }
-	 $scope.query();
-	 
-	 $scope.edit=function(type,method){
-		 var obj={"stopwords":$scope.stopwords,"type":type,"method":method};
+	 $scope.edit=function(type,method,word){
+		 var obj={"stopwords":word,"type":type,"method":method};
 		 $http({
 				method : 'POST',
 				url : 'httpService/editWords',
@@ -56,64 +54,85 @@
 				}
 			}).success(function(data) {
 				 alert("success");
-				 $scope.query();
 			});
 	 };
 	 
-	 $scope.addneg=function(){
-		 $scope.edit("neg","add");
-	 };
-	 
-	 $scope.delneg=function(){
-		 $scope.edit("neg","del");
-	 };
 	 
 	 
-	 $scope.basequery = function() {
-	    var obj={};
-		 var url = "httpService/queryFeel";
-	    	var divname="chart-container1";
-	    	var caption="web接口调用次数";
-	    	var myChart2=echarts.init(document.getElementById(divname));
-	    	readchart2(obj,url,divname,caption,myChart2,$scope);
-	    }
+	 btable04($http);
 	    
-	    $scope.basequery();
-	 
-	 
+	    
+	    
+	    $("#delbutton").click(function(){
+	    	$.map($('#table').bootstrapTable('getSelections'),function (row) {
+	    		 $scope.edit("neg","del",row.word+"|"+row.value);
+		    });
+	    });
+	    
+	    $("#sendbtn").click(function(){
+	    	$.map($('#table').bootstrapTable('getSelections'),function (row) {
+	    		 $scope.edit("neg","add",row.word+"|"+row.value);
+		    });
+	    });
 	 
   });
  
  
  
  app.controller('msgCtrl', function($scope, $http) {
+	 $scope.user=users[Math.floor(Math.random()*6)];
+	 $scope.themetype=0;
 	 $scope.style1="btn-default";
 	 $scope.style2="btn-default";
 	 $scope.sendbtn=function(){
-		  $("#contentDiv").append("<div ><span class='fontlarge'>客户: </span><span class='msgspandetail'>"+$scope.msgtxt+"</span><br/></span><span style='color: gray;'>"+getTime()+"</span></div>");
+		 $("#user").removeClass("ng-hide");
+		  $("#contentDiv").append("<div ><span class='fontlarge'>客户: </span><span class='msgspandetail msgcss usercss'>"+$scope.msgtxt+"</span><br/></span><span style='color: gray;'>"+getTime()+"</span></div>");
 		  $("#msgtxt").val("");
 		  $scope.themebtn();
 		  $scope.feelbtn("0",$scope.msgtxt);
 	  };
 	  
 	  $scope.sendbtn02=function(){
-		  $("#contentDiv").append("<div style='text-align:right'><span class='msgspandetail' >"+$scope.msgtxt02+"</span><span class='fontlarge' >:坐席</span><br/><span style='color: gray;'>"+getTime()+"</span></div>");
+		  $("#contentDiv").append("<div style='text-align:right'><span class='msgspandetail msgcss' >"+$scope.msgtxt02+"</span><span class='fontlarge' >:坐席</span><br/><span style='color: gray;'>"+getTime()+"</span></div>");
 		  $("#msgtxt02").val("");
-//		  $scope.themebtn();
+		  $scope.themebtn();
 		  $scope.feelbtn("1",$scope.msgtxt02);
 	  };
 	  
 	  $scope.finish=function(){
-		  $("#contentDiv").html("");
-		  $("#msgtxt").val("");
-		  $("#themeDiv").html("");
-		  $("#feelDiv").html("");
+		  var result="";
+		  $(".usercss").each(function(){
+			  result=result+$(this).text()+","
+		  });
+		  
+		  
+		  var obj={"msgtxt":result,"msghtml":$("#contentDiv").html()};
+		  $http({
+				method : 'POST',
+				url : 'httpService/finish',
+				data : JSON.stringify(obj),
+				headers : {
+					'Content-Type' : 'application/json;charset=utf-8',
+					"dataType": "json",
+				}
+			}).success(function(data) {
+				  $("#user").addClass("ng-hide");
+				  $scope.user=users[Math.floor(Math.random()*6)];
+				  $("#contentDiv").html("");
+				  $("#msgtxt").val("");
+				  $("#themeDiv").html("");
+			});
+		  
+		  
 	  };
 	 
 	 $scope.themebtn=function(){
-		 $scope.style1="btn-default";
-		 $scope.style2="btn-default";
-		  var obj={"msgtxt":$scope.msgtxt};
+		 var result="";
+		  $(".msgcss").each(function(){
+			  result=result+$(this).text()+","
+		  });
+		  
+		  var obj={"msgtxt":result};
 		  $http({
 						method : 'POST',
 						url : 'httpService/theme',
@@ -123,7 +142,26 @@
 							"dataType": "json",
 						}
 					}).success(function(data) {
-						$("#themeDiv").html(data)
+						$("div[id^='themetype_']").addClass("ng-hide");
+						$("#themetype_"+data.maxd).removeClass("ng-hide");
+//						 $scope.themetype=data.maxd;
+						$("#themeDiv").html(data.theme);
+						if(data.theme!=""){
+							
+							if(data.maxd==1){
+								$("#liucheng_h").html("业务流程-暴力催收");
+							}else if(data.maxd==2){
+								$("#liucheng_h").html("业务流程-协商还款");
+							}else if(data.maxd==3){
+								$("#liucheng_h").html("业务流程-减免利息");
+							}else if(data.maxd==4){
+								$("#liucheng_h").html("业务流程-逾期征信");
+							}else{
+								$("#liucheng_h").html("业务流程-服务态度");
+							};
+							$("#liucheng1").removeClass("ng-hide");
+						}
+						
 					});
 	  };
 	  
@@ -131,7 +169,7 @@
 	  $scope.feelbtn=function(usertype,msgtxt){
 		 
 		
-		  msgstr=$("#contentDiv").html();
+		  msgstr="";
 		  var obj={"msgtxt":msgtxt,"msgstr":msgstr};
 		 $http({
 					method : 'POST',
@@ -187,25 +225,8 @@
 			});
 	 };
 	 
-	 
-	 
-	 $scope.addstop=function(){
-		 $scope.edit("stop","add");
-	 };
-	 $scope.delstop=function(){
-		 $scope.edit("stop","del");
-	 };
-	 $scope.addjieba=function(){
-		 $scope.edit("jieba","add");
-	 };
-	 $scope.deljieba=function(){
-		 $scope.edit("jieba","del");
-	 };
-	 
-	 
-	 
-	 $scope.edit=function(type,method){
-		 var obj={"stopwords":$scope.stopwords,"type":type,"method":method};
+	 $scope.edit=function(type,method,word){
+		 var obj={"stopwords":word,"type":type,"method":method};
 		 $http({
 				method : 'POST',
 				url : 'httpService/editWords',
@@ -218,62 +239,25 @@
 				 alert("success");
 			});
 	 };
-	 
-	 $scope.basequery = function() {
-	    	var obj={};
-	    	
-	    	var url = "httpService/queryPer";
-	    	var divname="chart-container1";
-	    	var caption="web接口调用次数";
-	    	var myChart1=echarts.init(document.getElementById(divname));
-	    	readchart3(obj,url,divname,caption,myChart1);
-	    	
-	    	var url = "httpService/queryNum";
-	    	var divname="chart-container2";
-	    	var caption="web接口调用次数";
-	    	var myChart2=echarts.init(document.getElementById(divname));
-	    	readchart2(obj,url,divname,caption,myChart2,$scope);
-	    	
-	    	
-	    	$http({
-				method : 'POST',
-				url : 'httpService/querytopic',
-				headers : {
-					'Content-Type' : 'application/json;charset=utf-8',
-					"dataType": "json",
-				}
-			}).success(function(data) {
-				$scope.list = data;
-			});
-	    	
-	    	
-	    	$http({
-				method : 'POST',
-				url : 'httpService/queryStopWord',
-				data:{},
-				headers : {
-					'Content-Type' : 'application/json;charset=utf-8',
-					"dataType": "json",
-				}
-			}).success(function(data) {
-				$scope.list2 = data;
-			});
-	    	
-	    	$http({
-				method : 'POST',
-				url : 'httpService/queryJiebaWord',
-				data:{},
-				headers : {
-					'Content-Type' : 'application/json;charset=utf-8',
-					"dataType": "json",
-				}
-			}).success(function(data) {
-				$scope.list3 = data;
-			});
-	    	
-	    };
 	    
-	    $scope.basequery();
+	    btable($http);
+	    btable02($http);
+	    btable03($http);
+	    
+	    
+	    
+	    $("#delbutton03").click(function(){
+	    	$.map($('#table03').bootstrapTable('getSelections'),function (row) {
+	    		 $scope.edit("jieba","del",row.word);
+		    });
+	    });
+	    
+	    $("#delbutton02").click(function(){
+	    	$.map($('#table02').bootstrapTable('getSelections'),function (row) {
+	    		 $scope.edit("stop","del",row.word);
+		    });
+	    });
+	   
     
   });
  

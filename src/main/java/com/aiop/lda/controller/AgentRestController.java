@@ -34,6 +34,28 @@ public class AgentRestController {
 
 	private static Logger logger=LogManager.getLogger(LdaService.class.getName());
 	
+	
+	
+	@RequestMapping(value = "/updateTopicName", produces = "text/html;charset=utf-8")
+	@ResponseBody
+	public void updateTopicName(@RequestBody HashMap<String, String> obj ) {
+		String index=obj.get("index");
+		String field=obj.get("field");
+		String value=obj.get("value");
+		logger.info("updateTopicName start,index:{},field:{},value:{}",index,field,value);
+//		  index: index,       //行索引
+//          field: field,       //列名
+//          value: value        //cell值
+		
+		int id=Integer.valueOf(index);
+		if("topicname".equalsIgnoreCase(field)) {
+			HashMap<String,Object> param =new HashMap<String, Object>();
+			param.put("topicname", value);
+			LdaService.updateindex(LdaService.TWORDS_INDEX_NAME, id+1+"", param);
+		}
+	}
+	
+	
 	@RequestMapping(value = "/editWords", produces = "text/html;charset=utf-8")
 	@ResponseBody
 	public String editWords(@RequestBody HashMap<String, String> obj ) {
@@ -42,6 +64,7 @@ public class AgentRestController {
 		String type=obj.get("type");
 		String methods=obj.get("method");
 		String words=obj.get("stopwords");
+		logger.info("editWords start,type:{},methods:{},words:{}",type,methods,words);
 		if(StringsUtil.isBlank(words)){
 			return "input is empty";
 		}
@@ -82,7 +105,7 @@ public class AgentRestController {
 	
 	@RequestMapping(value = "/queryStopWord", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public List<Map<String, Object>> queryStopWord(@RequestBody HashMap<String, String> obj ) {
+	public List<Map<String, Object>> queryStopWord( ) {
 		logger.info("queryStopWord start");
 		HashMap<String,String> param =new HashMap<String, String>();
 		param.put("type", "stop");
@@ -97,7 +120,7 @@ public class AgentRestController {
 	
 	@RequestMapping(value = "/queryJiebaWord", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public List<Map<String, Object>> queryJiebaWord(@RequestBody HashMap<String, String> obj ) {
+	public List<Map<String, Object>> queryJiebaWord() {
 		logger.info("queryStopWord start");
 		HashMap<String,String> param =new HashMap<String, String>();
 		param.put("type", "jieba");
@@ -112,7 +135,7 @@ public class AgentRestController {
 	
 	@RequestMapping(value = "/queryNegWord", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public List<Map<String, Object>> queryNegWord(@RequestBody HashMap<String, String> obj ) {
+	public List<Map<String, Object>> queryNegWord( ) {
 		logger.info("queryNegWord start");
 		HashMap<String,String> param =new HashMap<String, String>();
 		param.put("type", "neg");
@@ -139,46 +162,95 @@ public class AgentRestController {
 	}
 	
 	
+	@RequestMapping(value = "/finish", produces = "text/html;charset=utf-8")
+	@ResponseBody
+	public JSONObject finish(@RequestBody HashMap<String, String> obj) {
+		JSONObject resultObj=new JSONObject();
+		String msgtxt=obj.get("msgtxt");
+		String msghtml=obj.get("msghtml");
+		logger.info("finish start.msgtxt={},msghtml={}",msgtxt,msghtml);
+		JSONObject tobj=theme(obj);
+		double result=EmotionModel.predict(msgtxt);
+		List<HashMap<String,Object>> lines=new ArrayList<HashMap<String,Object>>();
+		
+		HashMap<String,Object> line=new HashMap<String,Object>();
+		line.put("msgtxt", msgtxt);
+		line.put("msghtml", msghtml);
+		line.put("theme", tobj.get("theme"));
+		line.put("themeNum", tobj.get("maxd"));
+		line.put("themeRate", tobj.get("rate"));
+		line.put("feelNum", result);
+		if(result>0) {
+			line.put("neg", "正面情绪");
+		}else if(result==0){
+			line.put("neg", "正常");
+		}else if(result<0) {
+			line.put("neg", "负面情绪");
+		}
+		lines.add(line);
+		LdaService.insertBatchLineForMap("zxj_lda_log", lines);
+		
+		return resultObj;
+	}
+	
+	
 	@RequestMapping(value = "/theme", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public String theme(@RequestBody HashMap<String, String> obj) {
+	public JSONObject theme(@RequestBody HashMap<String, String> obj) {
+		JSONObject resultObj=new JSONObject();
 		String msgtxt=obj.get("msgtxt");
 		logger.info("theme start.msgtxt="+msgtxt);
 		double[] dist=LDAPredictor.theme(msgtxt);
-		String result="",resulttheme="";
-		double maxd=0;
+		String result="";
+		double maxd=0,mind=10000;
 		int i=0,maxi=0;
 		for (double d : dist) {
 			i++;
 			if(d>maxd) {
 				maxd=d;
 				maxi=i;
+				result=result+" "+Math.round(LDAUtils.baoliu(d,7)*10000)/100 + "% ";
 			}
-			result=result+" "+Math.round(LDAUtils.baoliu(d,7)*10000)/100 + "% ";
+			if(d<mind) {
+				mind=d;
+			}
 		}
-		resulttheme=maxi+"";
-		logger.info("theme end.result="+result+":"+resulttheme);
-		return result;
+		if(maxd==mind) {
+			resultObj.put("theme", "");
+			resultObj.put("rate", result);
+		}else {
+			HashMap<String,String> param=new HashMap<String, String>();
+			param.put("topic", maxi+"");
+			List<Map<String, Object>> list=LdaService.queryData(LdaService.TWORDS_INDEX_NAME,param);
+			if(list.size()>0) {
+				resultObj.put("theme", list.get(0).get("topicname"));
+				resultObj.put("maxd", maxi);
+			}
+			
+			resultObj.put("rate", result);
+		
+		}
+		
+		logger.info("theme end.result="+result);
+		return resultObj;
 	}
 	
 	@RequestMapping(value = "/feel", produces = "text/html;charset=utf-8")
 	@ResponseBody
 	public double feel(@RequestBody HashMap<String, String> obj) {
 		String msgtxt=obj.get("msgtxt");
-		String msgstr=obj.get("msgstr");
 		logger.info("feel start.msgtxt="+msgtxt);
 		double result=EmotionModel.predict(msgtxt);
-		saveEs(msgtxt,msgstr ,result);
 		logger.info("feel end.result="+result);
 		return result;
 	}
 	
 	@RequestMapping(value = "/querylog", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public List<Map<String, Object>> querylog(@RequestBody HashMap<String, String> obj) {
+	public List<Map<String, Object>> querylog(HttpServletRequest request) {
 		logger.info("querylog start");
-		String beginTimeStr=obj.get("beginTime");
-		String endTimeStr=obj.get("endTime");
+		String beginTimeStr=request.getParameter("beginTime");
+		String endTimeStr=request.getParameter("endTime");
 		Date beginTime=DateUtil.StrToDateForPattern(beginTimeStr, DateUtil.YYYY_MM_DD_HHMMSS_SSS);
 		Date endTime=DateUtil.StrToDateForPattern(endTimeStr, DateUtil.YYYY_MM_DD_HHMMSS_SSS);
 		beginTimeStr=DateUtil.DateToUTCstr(beginTime);
@@ -237,6 +309,11 @@ public class AgentRestController {
 			String words=(String) m.get("words");
 			m.put("name", words.split(" ")[0]);
 		}
+		
+		for(Map<String, Object> m:result) {
+			Date datestr=DateUtil.StrToDateForPatternAddHour(m.get("crtTime")+"");
+			m.put("crtTime", DateUtil.formatDate(datestr, DateUtil.YYYY_MM_DD_HHMMSS_SSS));
+		}
 		return result;
 	}
 	
@@ -244,31 +321,7 @@ public class AgentRestController {
 	
 
 
-	private void saveEs(String msgtxt,String msgstr, double result) {
-		double[] dist=LDAPredictor.theme(msgtxt);
-		String topicstr="";
-		for (double d : dist) {
-			topicstr=topicstr+" "+Math.round(LDAUtils.baoliu(d,7)*10000)/100 + "% ";
-		}
-		int theme=LDAPredictor.maxtheme(dist);
-		
-		List<HashMap<String,Object>> dbre=new ArrayList<HashMap<String,Object>>();
-		HashMap<String,Object> o=new HashMap<String, Object>();
-		o.put("msgtxt",msgtxt);
-		o.put("theme",theme);
-		o.put("topicstr",topicstr);
-		o.put("feel",result);
-		o.put("msgstr",msgstr);
-		if(result>0) {
-			o.put("neg", "正面情绪");
-		}else if(result==0){
-			o.put("neg", "正常");
-		}else if(result<0) {
-			o.put("neg", "负面情绪");
-		}
-		dbre.add(o);
-		LdaService.insertBatchLineForMap("zxj_lda_log", dbre);
-	}
+	
 	
 
 }

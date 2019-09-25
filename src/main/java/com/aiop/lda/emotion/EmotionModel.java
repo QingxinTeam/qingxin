@@ -35,7 +35,9 @@ public class EmotionModel {
 				if(splitStr!=null) {
 					//neg
 					String[] tmps=line.split(splitStr);
-					list.add(tmps[0]);
+					if(tmps.length!=2) {
+						continue;
+					}
 					negdict.put(tmps[0], Integer.valueOf(tmps[1]));
 				}else {
 					list.add(line);
@@ -44,7 +46,6 @@ public class EmotionModel {
 				line=reader.readLine();
 			}
 			reader.close();
-			System.out.println(list.size());
 		}
 		catch (Exception e){
 			System.out.println("Read Dataset Error: " + e.getMessage());

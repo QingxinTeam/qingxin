@@ -16,22 +16,101 @@
 
 <div class="row" style="margin-top: 10px;">
  
-  <div class="col-xs-12 col-md-6 divrightline" style="background-color:white;">
+  <div class="divrightline" style="background-color:white;width:62%;float:left">
   <div style="padding: 30px;">
   <span class="spanrow1" >客户画像</span>
   <hr style="width:95%; color:#09060e;" />
-   <span class=" huaxiang" >年龄:28</span> 
-   <span class=" huaxiang" >男</span> 
-     <span class=" huaxiang" >本月支出:10000</span> 
-     <span class=" huaxiang" >白金卡</span> 
+  <div id="user" class="ng-hide">
+   <span class=" huaxiang" >{{user.age}}</span> 
+   <span class=" huaxiang" >{{user.sex}}</span> 
+   <span class=" huaxiang" >{{user.out}}</span> 
+   <span class=" huaxiang" >{{user.card}}</span> 
+  </div>
+
   </div>
   </div>
-  <div class="col-xs-6 col-md-5 divrightline" style="background-color:white;   margin-left: 10px;">
+  <div class=" divrightline" style="background-color:white;   margin-left: 10px;width:37%;float:left">
    <div style="padding: 30px;">
    <span class="spanrow1" >进线意图</span>
   <hr style="width:95%; color:#09060e;" />
+  <span class=" huaxiang" style="width:30%" id="themeDiv"></span>
+   </div>
+  </div>
+</div>
+
+
+<div class="row" style="margin-top: 10px;">
+ 
+  <div class="divrightline" style="background-color:white;width:62%;float:left">
+  <div style="padding: 30px;">
+  <span class="spanrow1" >知识推荐</span>
+ <input type="text" class="form-control glyphicon glyphicon-search" placeholder="知识查询" style="width: 30%;float: right;"></input>
+  <hr style="width:95%; color:#09060e;" />
+  <div id="zhishicontent" >
+  <div id="themetype_1" class="ng-hide" >
   
-  <div id="themeDiv"></div>
+<a style="font-size: medium;">您可能关注下列相关问题，请输入序号查看答案：</a><br/>
+[1]停止催款的处理方案<br/>
+[2]取消/办理/咨询保险服务<br/>
+[3]把卡片暂时冻结怎么处理<br/>
+[4]查询总欠款<br/>
+[5]转人工<br/>
+  </div>
+   <div id="themetype_2" class="ng-hide" >
+     <a style="font-size: medium;">推荐您使用以下还款方式：</a><br/>
+1.买单吧APP快速还款【0手续费】【支持多家银行】<br/>
+2.绑卡自动还款（支持绑定本行及他行借记卡）<br/>
+3.第三方还款（由于第三方收服务费，不推荐使用如：支付宝、微信钱包、财付通还款）<br/>
+<br/>
+温馨提示：卡片状态/账户状态无论是否正常对还款均不产生影响，您只需把款项存入欠款的卡号中即可。<br/>
+<br/>
+点此立即进入官方APP，实时消费明细免费查，专享餐饮最低价，用卡方便又安全！<br/>
+<br/>
+您可能关注下列相关问题，请输入序号查看答案：<br/>
+[6]持多张卡如何还款<br/>
+[7]美元欠款怎么还款<br/>
+  </div>
+   <div id="themetype_3" class="ng-hide" >
+   <a style="font-size: medium;">利息收取情况：</a><br/>
+1.信用卡账单未按时全额还款：<br/>
+则账单中的每笔消费均以消费入账之日起，按每日0.035%-0.05%的浮动利率计息，直至该笔交易还上为止。<br/>
+2.信用额度内取现或转账：<br/>
+信用额度内取现或者转账，不享受免息期。自取现或者转账之日起，按每日0.035%-0.05%的浮动利率计息。<br/>
+<br/>
+温馨提示：<br/>
+1.利息会按月计收复利。<br/>
+2.若您在到期还款日（含）前未能偿还账单最低还款额，除计收利息外，还将按最低还款额未还部分计收违约金。<br/>
+3.利息在账单日当天进行清算，出账单后会占用信用额度。<br/>
+4.利息的收费标准由中国人民银行统一规定：日利率为0.035%-0.05%的浮动利率，准贷记卡普卡利率为0.05%，准贷记金卡利率为0.035%。<br/>
+<br/>
+您可能关注下列相关问题，请输入序号查看答案：<br/>
+[13]查询账单欠款<br/>
+[14]账单金额组成查询<br/>
+  </div>
+   <div id="themetype_4" class="ng-hide" >
+   您可通过中国人民银行个人信用信息服务平台https://ipcrs.pbccrc.org.cn查询您的个人信用记录，具体已开通查询的城市可见此网站中的公告栏；<br/>
+您也可通过您所在地的中国人民银行或上级中国人民银行分支机构查询，可一年免费查询2次个人信用记录（登录其网站www.pbccrc.org.cn可查询各地区的信用报告查询地点）。<br/>
+<br/>
+您可能关注下列相关问题，请输入序号查看答案：<br/>
+[15]个人信用记录说明<br/>
+[16]影响个人信用记录的情况<br/>
+  </div>
+   <div id="themetype_5" class="ng-hide" >
+   非常抱歉！给您带来了不好的服务体验，我会继续努力提升自己的。
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class=" divrightline" style="background-color:white;   margin-left: 10px;width:37%;float:left">
+   <div style="padding: 30px;">
+   <span class="spanrow1" >流程导航</span>
+  <hr style="width:95%; color:#09060e;" />
+  <div id="liucheng1" class="ng-hide">
+   <span  class="liucheng_h" style="background-color: #ffccff3b;"><span id="liucheng_h">业务流程-协商还款</span><span class="glyphicon glyphicon-triangle-top" style="float: right; margin-right: 20px"></span> </span> 
+    <span class="liucheng" >1 告知还款额度       <span class="glyphicon glyphicon-ok" style="float: right; margin-right: 20px"></span></span> 
+    <span class="liucheng" >2 询问是否能够按时还款      <span class="glyphicon glyphicon-ok" style="float: right; margin-right: 20px"></span></span> 
+    <span class="liucheng" >3 提示尽快还款</span> 
+    </div>
    </div>
   </div>
 </div>

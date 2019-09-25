@@ -59,6 +59,10 @@ public class LdaService {
 		 return api.queryEsIndex(index,ESConstants.DATA,param);
 	}
 	
+	public static void updateindex(String index,String id,HashMap<String,Object> param){
+		  api.upsertIndexMap(index,ESConstants.DATA,id,param);
+	}
+	
 	public static List<Map<String, Object>> queryDataByTime(String index,HashMap<String,String> param,String startTime,String endTime){
 		 return api.queryEsIndexByTime(index,ESConstants.DATA,param,startTime,endTime);
 		
