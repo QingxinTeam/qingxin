@@ -84,6 +84,22 @@
 	 $scope.themetype=0;
 	 $scope.style1="btn-default";
 	 $scope.style2="btn-default";
+	 
+	 
+	 $scope.myKeyup01 = function(e){
+		 var keycode = window.event?e.keyCode:e.which; 
+	        if(keycode==13){
+	        	 $scope.sendbtn();
+	        }
+	 }
+	 
+	 $scope.myKeyup02 = function(e){
+		 var keycode = window.event?e.keyCode:e.which; 
+	        if(keycode==13){
+	        	 $scope.sendbtn02();
+	        }
+	 }
+	 
 	 $scope.sendbtn=function(){
 		 $("#user").removeClass("ng-hide");
 		  $("#contentDiv").append("<div ><span class='fontlarge'>客户: </span><span class='msgspandetail msgcss usercss'>"+$scope.msgtxt+"</span><br/></span><span style='color: gray;'>"+getTime()+"</span></div>");
@@ -106,7 +122,7 @@
 		  });
 		  
 		  
-		  var obj={"msgtxt":result,"msghtml":$("#contentDiv").html()};
+		  var obj={"msgtxt":result,"msghtml":""};
 		  $http({
 				method : 'POST',
 				url : 'httpService/finish',

@@ -86,7 +86,6 @@ public class Fenci
 	public static String fenci(String line){
 		if(StringUtils.isNoneBlank(line)){
 			List<String> texts = segmenter.sentenceProcess(line);
-			System.out.println(texts);
 			String text = "";
 			for (String t : texts) {
 				if (filterWord(t)) {
@@ -96,7 +95,6 @@ public class Fenci
 			if(text.length()>1){
 				text = text.substring(1);
 			}
-			
 			return text;
 		}
 		return null;
@@ -153,7 +151,7 @@ public class Fenci
     public static void main( String[] args )
     {     
 //    	loadfileToEs();
-    	System.out.println(fenci("我很不满意"));
+    	System.out.println(fenci("你好,你们为什么总是给我打电话,"));
     }
     
 }

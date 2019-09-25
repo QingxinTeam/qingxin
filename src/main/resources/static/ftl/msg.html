@@ -5,9 +5,9 @@
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="row" style="background-color:white;margin-top: 10px;">
   <div class="col-xs-12 col-md-12">
-                <textarea ng-model="msgtxt" id="msgtxt" class="form-control msgtextarea" rows="2" cols="100"></textarea>
+                <textarea ng-keyup="myKeyup01($event)" ng-model="msgtxt" id="msgtxt" class="form-control msgtextarea" rows="1" cols="100"></textarea>
                 <input class="btn btn-success msgtopbutton"   ng-click="sendbtn()" id="sendbtn" type="button" value="模拟用户说话"></input>
-                <textarea ng-model="msgtxt02" id="msgtxt02" class="form-control msgtextarea" rows="2" cols="100"></textarea>
+                <textarea ng-keyup="myKeyup02($event)" ng-model="msgtxt02" id="msgtxt02" class="form-control msgtextarea" rows="1" cols="100"></textarea>
                 <input class="btn btn-success msgtopbutton" ng-click="sendbtn02()" id="sendbtn02" type="button" value="模拟客服说话"></input>
                 <input class="btn btn-success msgtopbutton"  ng-click="finish()" id="finish" type="button" value="结束会话"></input>
   </div>

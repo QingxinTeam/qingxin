@@ -170,6 +170,7 @@ public class AgentRestController {
 		String msghtml=obj.get("msghtml");
 		logger.info("finish start.msgtxt={},msghtml={}",msgtxt,msghtml);
 		JSONObject tobj=theme(obj);
+		System.out.println(tobj.toJSONString());
 		double result=EmotionModel.predict(msgtxt);
 		List<HashMap<String,Object>> lines=new ArrayList<HashMap<String,Object>>();
 		

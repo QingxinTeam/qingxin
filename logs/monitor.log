@@ -2762,3 +2762,561 @@ org.elasticsearch.client.transport.NoNodeAvailableException: None of the configu
 2019-09-25 14:41:31,386 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
 2019-09-25 14:42:48,428 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
 2019-09-25 14:42:48,439 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:46:54,379 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:46:54,388 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 14:46:54,397 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 14:46:54,928 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 14:46:54,930 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 14:46:54,931 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 14:46:54,932 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 14:46:54,932 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 14:46:54,933 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 14:46:57,289 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 14:46:58,585 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 14:48:05,466 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:49:05,204 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:49:05,219 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:49:05,234 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:49:21,550 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:49:21,573 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:49:21,588 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:50:53,673 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:50:53,696 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:50:53,717 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:51:40,798 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:51:40,816 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:51:40,836 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:51:44,959 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 14:51:45,440 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:51:45,453 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:51:45,476 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:51:47,784 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 14:51:53,448 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:52:40,845 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:52:40,860 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:52:40,870 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:52:42,987 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 14:52:45,836 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:52:45,849 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:52:45,864 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:53:00,800 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:53:00,811 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:53:00,827 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:53:01,256 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 14:53:02,662 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:53:03,466 [INFO] - com.aiop.lda.controller.AgentRestController.queryPer(AgentRestController.java:273) - queryPer start
+2019-09-25 14:53:03,469 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 14:53:03,487 [INFO] - com.aiop.lda.controller.AgentRestController.queryFeel(AgentRestController.java:288) - /queryFeel start
+2019-09-25 14:53:03,488 [INFO] - com.aiop.lda.controller.AgentRestController.queryNum(AgentRestController.java:280) - /queryNum start
+2019-09-25 14:53:04,547 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:53:04,561 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:53:04,587 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:53:05,405 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 14:53:08,092 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:53:08,626 [INFO] - com.aiop.lda.controller.AgentRestController.queryPer(AgentRestController.java:273) - queryPer start
+2019-09-25 14:53:08,643 [INFO] - com.aiop.lda.controller.AgentRestController.queryNum(AgentRestController.java:280) - /queryNum start
+2019-09-25 14:53:08,657 [INFO] - com.aiop.lda.controller.AgentRestController.queryFeel(AgentRestController.java:288) - /queryFeel start
+2019-09-25 14:53:10,764 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:53:10,850 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:53:10,852 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:53:13,923 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 14:53:13,938 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 14:53:13,950 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 14:55:28,079 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 14:57:17,516 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 14:57:22,066 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 14:57:22,077 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 14:57:23,825 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 14:57:23,856 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 14:57:42,771 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,在的，请说,
+2019-09-25 14:57:42,786 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=在的，请说
+2019-09-25 14:57:42,791 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-1.0
+2019-09-25 14:57:42,796 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:01:22,537 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 15:01:22,548 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 15:01:22,968 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 15:01:22,969 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 15:01:22,970 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 15:01:22,970 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 15:01:22,970 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 15:01:22,970 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 15:01:24,887 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 15:01:25,934 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 15:01:26,265 [INFO] - com.aiop.lda.service.LdaService.deleteIndex(LdaService.java:44) - {"acknowledged":true}
+
+2019-09-25 15:01:34,759 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 15:01:34,771 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 15:01:34,780 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 15:01:35,209 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 15:01:35,212 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 15:01:35,212 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 15:01:35,213 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 15:01:35,213 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 15:01:35,213 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 15:01:37,115 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 15:01:38,408 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 15:01:38,552 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndexByTime(ElasticSearchHandler.java:177) - no such index [zxj_lda_log]
+org.elasticsearch.index.IndexNotFoundException: no such index [zxj_lda_log]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:761) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:713) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:669) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:163) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:138) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.resolveLocalIndices(TransportSearchAction.java:456) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:470) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeLocalSearch(TransportSearchAction.java:399) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$3(TransportSearchAction.java:211) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:62) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:114) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:87) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:241) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:86) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:145) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:123) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:143) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:84) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:80) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:250) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:308) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:63) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler$RequestHandler.doRun(InboundHandler.java:267) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$DirectExecutorService.execute(EsExecutors.java:193) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.handleRequest(InboundHandler.java:188) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.messageReceived(InboundHandler.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.inboundMessage(InboundHandler.java:105) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TcpTransport.inboundMessage(TcpTransport.java:660) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:62) ~[transport-netty4-client-7.2.0.jar:7.2.0]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:1.8.0_191]
+2019-09-25 15:01:48,556 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 15:01:48,557 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 15:01:50,438 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:01:50,440 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:01:54,985 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,你好，在的,
+2019-09-25 15:01:54,993 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好，在的
+2019-09-25 15:01:54,991 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:01:54,995 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:02:12,918 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,你好，在的,我想咨询一下，你们总是给我打电话是什么意思,
+2019-09-25 15:02:12,926 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=我想咨询一下，你们总是给我打电话是什么意思
+2019-09-25 15:02:12,928 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:02:13,163 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 55% 
+2019-09-25 15:03:41,472 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 15:03:41,475 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 15:03:41,484 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 15:03:41,495 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 15:03:41,962 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 15:03:41,963 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 15:03:41,964 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 15:03:41,964 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 15:03:41,964 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 15:03:41,965 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 15:03:43,734 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 15:03:44,839 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 15:03:46,690 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:03:47,201 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:03:54,586 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=您好，在的
+2019-09-25 15:03:54,601 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:03:54,613 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,
+2019-09-25 15:03:54,614 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:41,700 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,
+2019-09-25 15:09:41,711 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:41,717 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:41,717 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:41,822 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,
+2019-09-25 15:09:41,828 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:41,835 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:41,836 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:41,900 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,
+2019-09-25 15:09:41,901 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:41,902 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:41,903 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:41,999 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,undefined,
+2019-09-25 15:09:42,000 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:42,002 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:42,002 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:42,043 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:42,043 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:42,043 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,undefined,undefined,
+2019-09-25 15:09:42,046 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:42,161 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,undefined,undefined,undefined,
+2019-09-25 15:09:42,162 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:42,164 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:42,164 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:45,231 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,undefined,undefined,undefined,undefined,
+2019-09-25 15:09:45,236 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:45,244 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:45,245 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:45,400 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,
+2019-09-25 15:09:45,402 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:45,407 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:45,408 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:09:46,030 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,
+2019-09-25 15:09:46,032 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:09:46,036 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=null
+2019-09-25 15:09:46,036 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:12:29,415 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 15:12:29,415 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:12:29,419 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 15:12:29,423 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:14:05,166 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 15:14:05,168 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:14:05,176 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 15:14:05,176 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:14:09,912 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,在吗,
+2019-09-25 15:14:09,918 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:14:09,943 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=在吗
+2019-09-25 15:14:09,944 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:14:13,477 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,在吗,在的,
+2019-09-25 15:14:13,479 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:14:13,484 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=在的
+2019-09-25 15:14:13,486 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:14:21,066 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,在吗,在的,请问有什么可以帮您,
+2019-09-25 15:14:21,067 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:14:21,077 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=请问有什么可以帮您
+2019-09-25 15:14:21,079 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:14:37,962 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,在吗,在的,请问有什么可以帮您,你们为什么总是给我打电话,
+2019-09-25 15:14:37,985 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你们为什么总是给我打电话
+2019-09-25 15:14:37,987 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-1.0
+2019-09-25 15:14:38,082 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 42% 
+2019-09-25 15:15:06,661 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,在吗,在的,请问有什么可以帮您,你们为什么总是给我打电话,不好意思，给您造成的不便很抱歉,
+2019-09-25 15:15:06,668 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=不好意思，给您造成的不便很抱歉
+2019-09-25 15:15:06,673 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-2.0
+2019-09-25 15:15:06,794 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 33% 
+2019-09-25 15:17:47,121 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 15:17:47,129 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 15:17:47,139 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 15:17:47,586 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 15:17:47,588 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 15:17:47,590 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 15:17:47,591 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 15:17:47,591 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 15:17:47,591 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 15:17:49,475 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 15:17:50,642 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 15:17:50,876 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 15:17:51,872 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 15:17:51,984 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndexByTime(ElasticSearchHandler.java:177) - no such index [zxj_lda_log]
+org.elasticsearch.index.IndexNotFoundException: no such index [zxj_lda_log]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:761) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:713) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:669) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:163) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:138) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.resolveLocalIndices(TransportSearchAction.java:456) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:470) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeLocalSearch(TransportSearchAction.java:399) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$3(TransportSearchAction.java:211) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:62) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:114) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:87) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:241) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:86) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:145) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:123) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:143) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:84) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:80) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:250) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:308) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:63) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler$RequestHandler.doRun(InboundHandler.java:267) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$DirectExecutorService.execute(EsExecutors.java:193) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.handleRequest(InboundHandler.java:188) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.messageReceived(InboundHandler.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.inboundMessage(InboundHandler.java:105) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TcpTransport.inboundMessage(TcpTransport.java:660) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:62) ~[transport-netty4-client-7.2.0.jar:7.2.0]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:1.8.0_191]
+2019-09-25 15:17:54,820 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 15:17:56,398 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 15:17:56,413 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 15:17:56,427 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 15:17:57,390 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 15:17:57,500 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndexByTime(ElasticSearchHandler.java:177) - no such index [zxj_lda_log]
+org.elasticsearch.index.IndexNotFoundException: no such index [zxj_lda_log]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:761) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:713) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:669) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:163) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:138) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.resolveLocalIndices(TransportSearchAction.java:456) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:470) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeLocalSearch(TransportSearchAction.java:399) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$3(TransportSearchAction.java:211) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:62) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:114) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:87) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:241) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:86) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:145) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:123) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:143) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:84) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:80) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:250) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:308) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:63) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler$RequestHandler.doRun(InboundHandler.java:267) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$DirectExecutorService.execute(EsExecutors.java:193) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.handleRequest(InboundHandler.java:188) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.messageReceived(InboundHandler.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.inboundMessage(InboundHandler.java:105) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TcpTransport.inboundMessage(TcpTransport.java:660) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:62) ~[transport-netty4-client-7.2.0.jar:7.2.0]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:1.8.0_191]
+2019-09-25 15:18:06,211 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:297) - querytopic start
+2019-09-25 15:18:06,228 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-25 15:18:06,253 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-25 15:18:06,719 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 15:18:08,492 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 15:18:08,591 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndexByTime(ElasticSearchHandler.java:177) - no such index [zxj_lda_log]
+org.elasticsearch.index.IndexNotFoundException: no such index [zxj_lda_log]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.indexNotFoundException(IndexNameExpressionResolver.java:761) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.innerResolve(IndexNameExpressionResolver.java:713) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver$WildcardExpressionResolver.resolve(IndexNameExpressionResolver.java:669) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:163) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.cluster.metadata.IndexNameExpressionResolver.concreteIndices(IndexNameExpressionResolver.java:138) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.resolveLocalIndices(TransportSearchAction.java:456) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeSearch(TransportSearchAction.java:470) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.executeLocalSearch(TransportSearchAction.java:399) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.lambda$doExecute$3(TransportSearchAction.java:211) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:62) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:114) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.index.query.Rewriteable.rewriteAndFetch(Rewriteable.java:87) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:241) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:86) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:145) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:123) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:143) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:84) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.support.HandledTransportAction$TransportHandler.messageReceived(HandledTransportAction.java:80) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:250) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:308) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:63) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler$RequestHandler.doRun(InboundHandler.java:267) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$DirectExecutorService.execute(EsExecutors.java:193) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.handleRequest(InboundHandler.java:188) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.messageReceived(InboundHandler.java:121) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.InboundHandler.inboundMessage(InboundHandler.java:105) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TcpTransport.inboundMessage(TcpTransport.java:660) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.netty4.Netty4MessageChannelHandler.channelRead(Netty4MessageChannelHandler.java:62) ~[transport-netty4-client-7.2.0.jar:7.2.0]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297) ~[netty-codec-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) ~[netty-handler-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:1.8.0_191]
+2019-09-25 15:18:15,852 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好，在吗
+2019-09-25 15:18:15,853 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,
+2019-09-25 15:18:17,787 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:18:17,802 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:18:27,931 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,
+2019-09-25 15:18:27,933 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:18:27,942 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=您好，在的
+2019-09-25 15:18:27,943 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:18:41,570 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=请问有什么可以帮您
+2019-09-25 15:18:41,571 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:18:41,575 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,请问有什么可以帮您,
+2019-09-25 15:18:41,576 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:18:54,161 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话
+‘’,
+2019-09-25 15:18:54,165 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你们为什么总是给我打电话
+‘’
+2019-09-25 15:18:54,166 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-1.0
+2019-09-25 15:18:54,259 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 42% 
+2019-09-25 15:19:19,858 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话
+‘’,不好意思，我记录下来了,
+2019-09-25 15:19:19,877 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=不好意思，我记录下来了
+2019-09-25 15:19:19,880 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:19:19,968 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 33% 
+2019-09-25 15:19:31,933 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=好的，下次别再给为打电话了
+2019-09-25 15:19:31,934 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.5
+2019-09-25 15:19:31,935 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话
+‘’,不好意思，我记录下来了,好的，下次别再给为打电话了,
+2019-09-25 15:19:32,025 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 53% 
+2019-09-25 15:19:45,166 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话
+‘’,不好意思，我记录下来了,好的，下次别再给为打电话了,好的，还有什么可以帮您,
+2019-09-25 15:19:45,180 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=好的，还有什么可以帮您
+2019-09-25 15:19:45,192 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=2.0
+2019-09-25 15:19:45,406 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 53% 
+2019-09-25 15:19:50,507 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话
+‘’,不好意思，我记录下来了,好的，下次别再给为打电话了,好的，还有什么可以帮您,没有了,
+2019-09-25 15:19:50,520 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=没有了
+2019-09-25 15:19:50,521 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-1.0
+2019-09-25 15:19:50,582 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 69% 
+2019-09-25 15:19:51,591 [INFO] - com.aiop.lda.controller.AgentRestController.finish(AgentRestController.java:171) - finish start.msgtxt=你好，在吗,你们为什么总是给我打电话
+‘’,好的，下次别再给为打电话了,没有了,,msghtml=<div><span class="fontlarge">客户: </span><span class="msgspandetail msgcss usercss">你好，在吗</span><br><span style="color: gray;">15:18:15</span></div><div style="text-align:right"><span class="msgspandetail msgcss">您好，在的</span><span class="fontlarge">:坐席</span><br><span style="color: gray;">15:18:27</span></div><div style="text-align:right"><span class="msgspandetail msgcss">请问有什么可以帮您</span><span class="fontlarge">:坐席</span><br><span style="color: gray;">15:18:41</span></div><div><span class="fontlarge">客户: </span><span class="msgspandetail msgcss usercss">你们为什么总是给我打电话
+‘’</span><br><span style="color: gray;">15:18:54</span></div><div style="text-align:right"><span class="msgspandetail msgcss">不好意思，我记录下来了</span><span class="fontlarge">:坐席</span><br><span style="color: gray;">15:19:19</span></div><div><span class="fontlarge">客户: </span><span class="msgspandetail msgcss usercss">好的，下次别再给为打电话了</span><br><span style="color: gray;">15:19:31</span></div><div style="text-align:right"><span class="msgspandetail msgcss">好的，还有什么可以帮您</span><span class="fontlarge">:坐席</span><br><span style="color: gray;">15:19:45</span></div><div><span class="fontlarge">客户: </span><span class="msgspandetail msgcss usercss">没有了</span><br><span style="color: gray;">15:19:50</span></div>
+2019-09-25 15:19:51,592 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好，在吗,你们为什么总是给我打电话
+‘’,好的，下次别再给为打电话了,没有了,
+2019-09-25 15:19:51,677 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 63% 
+2019-09-25 15:19:52,797 [INFO] - com.aiop.lda.service.LdaService.insertBatchLineForMap(LdaService.java:114) - 插入ES:zxj_lda_log size=1
+2019-09-25 15:20:01,212 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start
+2019-09-25 15:23:33,737 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 15:23:33,738 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:23:33,744 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 15:23:33,744 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:23:37,661 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,
+2019-09-25 15:23:37,663 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:23:37,674 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=您好，在的
+2019-09-25 15:23:37,676 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:23:51,133 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=请问有什么可以帮您
+2019-09-25 15:23:51,135 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:23:51,132 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,请问有什么可以帮您,
+2019-09-25 15:23:51,136 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:24:00,167 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话,
+2019-09-25 15:24:00,176 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你们为什么总是给我打电话
+2019-09-25 15:24:00,180 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-1.0
+2019-09-25 15:24:00,238 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 42% 
+2019-09-25 15:24:11,554 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话,抱歉，我这边会记录问题得劲儿,
+2019-09-25 15:24:11,564 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=抱歉，我这边会记录问题得劲儿
+2019-09-25 15:24:11,566 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:24:11,680 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 33% 
+2019-09-25 15:24:15,091 [INFO] - com.aiop.lda.controller.AgentRestController.finish(AgentRestController.java:171) - finish start.msgtxt=你好,你们为什么总是给我打电话,,msghtml=
+2019-09-25 15:24:15,092 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,你们为什么总是给我打电话,
+2019-09-25 15:24:15,209 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 42% 
+2019-09-25 15:24:15,333 [INFO] - com.aiop.lda.service.LdaService.insertBatchLineForMap(LdaService.java:114) - 插入ES:zxj_lda_log size=1
+2019-09-25 15:24:51,024 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 15:24:51,036 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 15:24:51,482 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 15:24:51,484 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 15:24:51,484 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 15:24:51,484 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 15:24:51,484 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 15:24:51,485 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 15:24:54,037 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 15:24:55,074 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 15:26:43,220 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,
+2019-09-25 15:26:43,220 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你好
+2019-09-25 15:26:43,228 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-25 15:26:43,236 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-25 15:26:43,673 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-25 15:26:43,675 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-25 15:26:43,676 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-25 15:26:43,677 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-25 15:26:43,677 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-25 15:26:43,678 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-25 15:26:45,440 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-25 15:26:46,803 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-25 15:26:48,757 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:26:48,994 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:26:57,243 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,
+2019-09-25 15:26:57,254 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:26:57,261 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=您好，在的
+2019-09-25 15:26:57,262 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=0.0
+2019-09-25 15:27:04,923 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,请问有什么可以帮您,
+2019-09-25 15:27:04,926 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 20% 
+2019-09-25 15:27:04,938 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=请问有什么可以帮您
+2019-09-25 15:27:04,939 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:27:15,625 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话,
+2019-09-25 15:27:15,648 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=你们为什么总是给我打电话
+2019-09-25 15:27:15,649 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=-1.0
+2019-09-25 15:27:15,714 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 42% 
+2019-09-25 15:27:27,769 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,您好，在的,请问有什么可以帮您,你们为什么总是给我打电话,抱歉，我这边会告知电话部门得劲儿,
+2019-09-25 15:27:27,776 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:242) - feel start.msgtxt=抱歉，我这边会告知电话部门得劲儿
+2019-09-25 15:27:27,778 [INFO] - com.aiop.lda.controller.AgentRestController.feel(AgentRestController.java:244) - feel end.result=1.0
+2019-09-25 15:27:27,896 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 45% 
+2019-09-25 15:27:35,501 [INFO] - com.aiop.lda.controller.AgentRestController.finish(AgentRestController.java:171) - finish start.msgtxt=你好,你们为什么总是给我打电话,,msghtml=
+2019-09-25 15:27:35,502 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:202) - theme start.msgtxt=你好,你们为什么总是给我打电话,
+2019-09-25 15:27:35,617 [INFO] - com.aiop.lda.controller.AgentRestController.theme(AgentRestController.java:234) - theme end.result= 42% 
+2019-09-25 15:27:35,802 [INFO] - com.aiop.lda.service.LdaService.insertBatchLineForMap(LdaService.java:114) - 插入ES:zxj_lda_log size=1
+2019-09-25 15:27:57,132 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-25 15:27:58,766 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:251) - querylog start

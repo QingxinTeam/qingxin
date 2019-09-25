@@ -34,6 +34,7 @@ public class LDAPredictor {
 	
 	public static double [] theme(String msg) {
 		String input = Fenci.fenci(msg);
+		System.out.println(input);
 		Model model = predictor.inference(input);
 		
 		double [] dist = model.theta[0];

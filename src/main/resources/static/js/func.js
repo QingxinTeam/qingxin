@@ -112,14 +112,14 @@ function btabledata($http,obj){
 	            title: '顾客情绪',
 	            edit:false
 	        },{
-	            field: 'feel',
+	            field: 'feelNum',
 	            title: '情感值'
 	        },{
 	            field: 'theme',
 	            title: '咨询主题',
 	            edit:false
 	        },  {
-	            field: 'topicstr',
+	            field: 'themeRate',
 	            title: '主题分步'
 	        }],
 	        /**

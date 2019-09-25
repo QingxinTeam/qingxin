@@ -74,6 +74,7 @@ public class EmotionModel {
 		  return 1;
 	  }
 	  String[] sd=Fenci.fenci(input).split(" ");
+	  System.out.println(sd.toString());
 	  int negweight=1;
 	  for(int i=0;i<sd.length;i++) {
 		  if(StringsUtil.isBlank(sd[i])) {

@@ -37,8 +37,8 @@ public class LdaService {
 	
 	public  static void deleteIndex() {
 		String delurl="";
-		String[] deltables=new String[]{WORDMAP_INDEX_NAME,TASSIGN_INDEX_NAME,THETA_INDEX_NAME,MAX_THETA_INDEX_NAME,PHI_INDEX_NAME,TWORDS_INDEX_NAME};
-//		String[] deltables=new String[]{PER_INDEX_NAME};
+//		String[] deltables=new String[]{WORDMAP_INDEX_NAME,TASSIGN_INDEX_NAME,THETA_INDEX_NAME,MAX_THETA_INDEX_NAME,PHI_INDEX_NAME,TWORDS_INDEX_NAME};
+		String[] deltables=new String[]{LOG_INDEX_NAME};
 		for(String d: deltables){
 			delurl = "http://" + BaseConfigProperties.ESLOG_HOST + ":9200/"+ d;
 			logger.info(HttpClient.doDelete(delurl));
