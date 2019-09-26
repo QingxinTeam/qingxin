@@ -143,6 +143,8 @@
 	  };
 	 
 	 $scope.themebtn=function(){
+		 
+		
 		 var result="";
 		  $(".msgcss").each(function(){
 			  result=result+$(this).text()+","
@@ -257,6 +259,26 @@
 	 };
 	    
 	    btable($http);
+  });
+ 
+ 
+ app.controller('fenciCtrl', function($scope, $http) {
+	 
+	 $scope.edit=function(type,method,word){
+		 var obj={"stopwords":word,"type":type,"method":method};
+		 $http({
+				method : 'POST',
+				url : 'httpService/editWords',
+				data : obj,
+				headers : {
+					'Content-Type' : 'application/json;charset=utf-8',
+					"dataType": "json",
+				}
+			}).success(function(data) {
+				 alert("success");
+			});
+	 };
+	    
 	    btable02($http);
 	    btable03($http);
 	    

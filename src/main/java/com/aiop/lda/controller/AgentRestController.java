@@ -38,7 +38,7 @@ public class AgentRestController {
 	
 	@RequestMapping(value = "/updateTopicName", produces = "text/html;charset=utf-8")
 	@ResponseBody
-	public void updateTopicName(@RequestBody HashMap<String, String> obj ) {
+	public String updateTopicName(@RequestBody HashMap<String, String> obj ) {
 		String index=obj.get("index");
 		String field=obj.get("field");
 		String value=obj.get("value");
@@ -51,8 +51,9 @@ public class AgentRestController {
 		if("topicname".equalsIgnoreCase(field)) {
 			HashMap<String,Object> param =new HashMap<String, Object>();
 			param.put("topicname", value);
-			LdaService.updateindex(LdaService.TWORDS_INDEX_NAME, id+1+"", param);
+			LdaService.updateindex(LdaService.TWORDS_INDEX_NAME, id+"", param);
 		}
+		return "true";
 	}
 	
 	

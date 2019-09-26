@@ -15,6 +15,11 @@
 	    	controller:'themeCtrl'
 	    })  
 	    
+	     .when('/fenci',{
+	    	templateUrl:'ftl/stopword.html',
+	    	controller:'fenciCtrl'
+	    })  
+	    
 	    .when('/msg',{
 	    	templateUrl:'ftl/msg.html',
 	    	controller:'msgCtrl'

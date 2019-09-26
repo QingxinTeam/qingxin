@@ -5,6 +5,86 @@ var users=[{"age":"年龄：28","sex":"性别：男","out":"本月支出：10000
 	{"age":"年龄：46","sex":"性别：男","out":"本月支出：20000","card":"卡类别：白金卡"},
 	{"age":"年龄：55","sex":"性别：男","out":"本月支出：3000","card":"卡类别：白金卡"}];
 
+
+//新增行和编辑行时右侧操作改为保存和取消
+let editFormatter = ` 
+<button onclick = 'saveRow(this)' id='button' class='btn btn-default' style='background-color:#bf502e;color:white;border: 0px;'> <span class='glyphicon glyphicon-ok'></span> 保存</button>
+<button onclick='cancleRow(this)' id='button' class='btn btn-default' style='background-color:#1caf27;color:white;border: 0px;'> <span class='glyphicon glyphicon-minus'></span> 取消</button>
+` 
+	
+	function refreshTable() { //静默刷新
+	   $('#table').bootstrapTable('refresh', {
+	       silent: true,
+	       url: '',
+	       query: ''
+	   })
+	    }
+	
+	 //开启编辑
+	 function editRow(index) {
+	     $("#table tr:nth-child(" + (index + 1)).attr('data-edit', true) //编辑标志
+	     $("#table tr:nth-child(" + (index + 1) + ") td.editable").each(function () {
+	         var value = $(this).text();
+	         $(this).html("<input value='" + value + "'>");
+	     });
+	     $("#table tr:nth-child(" + (index + 1) + ") td.editOperate").html(editFormatter)
+	 };	
+	 
+	//取消编辑
+	 function cancleRow(ele) {
+	     let obj = $(ele).parent().parent(); //获取tr的dom
+	     let del = obj.siblings().length == 0 ? false : true;
+	     let edit = obj.attr('data-edit') ? true : false;
+	     // console.log(edit)
+	     if (edit) { //编辑状态回归
+	         refreshTable() //刷新
+	     } else { //新增行删除
+	         if (!del) return; //没有数据
+	         $("#table").bootstrapTable('remove', {
+	             field: 'name',
+	             values: ['']
+	         });
+	         addKey = true;
+	     }
+	 };
+	 
+	 //保存数据
+	 function saveRow(ele) {
+	 	let obj = $(ele).parent().parent(); //获取tr的dom
+	 	let saveKey = true; //是否允许保存
+	 	let edit = obj.attr('data-edit') ? true : false; //是编辑还是添加
+	 	let arrVal = []; //保存填入的数据
+	 	obj.find('td.editable').each(function (index) {
+	 	    let val = $(this).find("input").val().trim();
+	 	    if (index < 1 && !val) saveKey = false; 
+	 	    arrVal.push(val)
+	 	})
+	 	if (!saveKey) {
+	 	    console.log('分类名称不能为空');
+	 	    return;
+	 	}
+	 	if (edit) { //修改编辑
+	 	    let id = obj.find('td.topic').text(); //这个就自己去获取，我这里只是随便写的（自
+	 	   var paramobj={"index":id,"field":"topicname","value":arrVal[0]};
+	 	  $.ajax({
+					method : 'POST',
+					url : 'httpService/updateTopicName',
+					data : JSON.stringify(paramobj),
+					'contentType' : 'application/json;charset=utf-8',
+					"dataType": "json",
+					"success" : function(data) {
+						alert('success');
+
+					}
+				});
+	 	
+	 	} 
+	 	//发送数据成功后回调刷新
+	 	refreshTable() //刷新
+	 };
+
+	
+
 function btable($http){
 	 let $table = $('#table');
 	    let $button = $('#button');
@@ -25,26 +105,31 @@ function btable($http){
 	            checkbox: true
 	        }, {
 	            field: 'crtTime',
-	            title: '创建时间',
-	            edit:false
+	            title: '创建时间'
 	        }, {
 	            field: 'topic',
 	            title: '主题序号',
-	            edit:false
+	            class: 'topic'
 	        },{
 	            field: 'topicname',
-	            title: '主题分类'
+	            title: '主题分类',
+	            class: 'editable'
 	        },{
 	            field: 'words',
-	            title: '关键字',
-	            edit:false
+	            title: '关键字'
+	        },
+	        {
+	            title: '操作',
+	            field: 'operate',
+	            class: 'editOperate',
+	            formatter: formatterOperate
 	        }],
 	        /**
 	         * @param {点击列的 field 名称} field
 	         * @param {点击列的 value 值} value
 	         * @param {点击列的整行数据} row
 	         * @param {td 元素} $element
-	         */
+	        
 	        onDblClickCell: function(field, value, row, $element) {
 	            $element.attr('contenteditable', true);
 	            $element.blur(function() {
@@ -53,26 +138,20 @@ function btable($http){
 
 	                saveData(index, field, tdValue);
 	            })
-	        }
+	        } */
 	    });
+	    
+	  //格式化操作
+		 function formatterOperate(value, row, index) {
+			return "<button onclick='editRow("+index+")' id='button' class='btn btn-default' style='background-color:#1caf27;color:white;border: 0px;'> <span class='glyphicon glyphicon-edit'></span> 编辑</button>";
+			 };
 
 	    $getTableData.click(function() {
 	        alert(JSON.stringify($table.bootstrapTable('getData')));
 	    });
 
 	    function saveData(index, field, value) {
-	        var obj={"index":index,"field":field,"value":value};
-			 $http({
-					method : 'POST',
-					url : 'httpService/updateTopicName',
-					data : obj,
-					headers : {
-						'Content-Type' : 'application/json;charset=utf-8',
-						"dataType": "json",
-					}
-				}).success(function(data) {
-					 alert("success");
-				});
+	      
 	    }
 
 }
@@ -272,7 +351,7 @@ function btable03($http){
 	            edit:false
 	        },{
 	            field: 'word',
-	            title: '停用词'
+	            title: '词语'
 	        }],
 	        /**
 	         * @param {点击列的 field 名称} field

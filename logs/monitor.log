@@ -1683,3 +1683,293 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-09-26 14:02:42,773 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
 2019-09-26 14:02:46,922 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
 2019-09-26 14:02:48,600 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-26 14:03:17,062 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-26 14:03:17,092 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-26 14:03:17,843 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-26 14:03:17,846 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-26 14:03:17,846 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-26 14:03:17,847 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-26 14:03:17,847 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-26 14:03:17,848 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-26 14:03:21,346 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-26 14:03:22,657 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-26 14:18:42,665 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:18:45,224 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:18:45,224 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:18:46,914 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:18:47,924 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-26 14:18:48,625 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:18:48,635 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:19:11,395 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:19:11,409 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:19:14,246 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:19:14,264 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:19:47,189 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:19:47,202 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:19:51,069 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-26 14:19:59,311 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:19:59,328 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:20:11,530 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:20:40,053 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:20:42,457 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:20:50,873 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:20:51,855 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-26 14:20:53,499 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:20:53,510 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:20:55,339 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:252) - querylog start
+2019-09-26 14:20:58,702 [INFO] - com.aiop.lda.controller.AgentRestController.queryNum(AgentRestController.java:281) - /queryNum start
+2019-09-26 14:20:58,703 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-26 14:20:58,708 [INFO] - com.aiop.lda.controller.AgentRestController.queryFeel(AgentRestController.java:289) - /queryFeel start
+2019-09-26 14:20:58,699 [INFO] - com.aiop.lda.controller.AgentRestController.queryPer(AgentRestController.java:274) - queryPer start
+2019-09-26 14:21:33,471 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:252) - querylog start
+2019-09-26 14:21:46,193 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:21:46,213 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:21:47,467 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-26 14:21:48,590 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:21:49,938 [INFO] - com.aiop.lda.controller.AgentRestController.queryNegWord(AgentRestController.java:139) - queryNegWord start
+2019-09-26 14:21:51,476 [INFO] - com.aiop.lda.controller.AgentRestController.queryStopWord(AgentRestController.java:109) - queryStopWord start
+2019-09-26 14:21:51,489 [INFO] - com.aiop.lda.controller.AgentRestController.queryJiebaWord(AgentRestController.java:124) - queryStopWord start
+2019-09-26 14:22:06,566 [INFO] - com.aiop.lda.controller.AgentRestController.querylog(AgentRestController.java:252) - querylog start
+2019-09-26 14:22:08,213 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 14:49:21,622 [WARN] - org.elasticsearch.transport.TcpTransport.onException(TcpTransport.java:611) - exception caught on transport layer [Netty4TcpChannel{localAddress=/192.168.43.136:58263, remoteAddress=/52.130.67.106:9300}], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125) ~[netty-buffer-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) [netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2019-09-26 14:50:51,688 [WARN] - org.elasticsearch.transport.TcpTransport.onException(TcpTransport.java:611) - exception caught on transport layer [Netty4TcpChannel{localAddress=/192.168.43.136:60474, remoteAddress=/52.130.67.106:9300}], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125) ~[netty-buffer-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) [netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2019-09-26 15:07:26,761 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:07:28,834 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:07:31,626 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:07:32,822 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:08:04,844 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:08:06,362 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:08:12,043 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:09:15,159 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:09:24,488 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:09:26,586 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:09:58,415 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:09:58,425 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-26 15:09:58,436 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-26 15:09:58,816 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-26 15:09:58,819 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-26 15:09:58,819 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-26 15:09:58,820 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-26 15:09:58,820 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-26 15:09:58,821 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-26 15:10:00,618 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-26 15:10:02,348 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-26 15:10:34,743 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:10:52,453 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:11:13,920 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:11:55,584 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:11:57,045 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:13:32,668 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:19:06,460 [ERROR] - com.aiop.lda.AgentApplication.main(AgentApplication.java:27) - Connector configured to listen on port 8080 failed to start
+org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8080 failed to start
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.checkThatConnectorsHaveStarted(TomcatEmbeddedServletContainer.java:222) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:198) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at com.aiop.lda.AgentApplication.main(AgentApplication.java:25) [classes/:?]
+2019-09-26 15:23:20,828 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:23:20,839 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-26 15:23:20,859 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-26 15:23:21,301 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-26 15:23:21,304 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-26 15:23:21,304 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-26 15:23:21,305 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-26 15:23:21,305 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-26 15:23:21,305 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-26 15:23:23,153 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-26 15:23:26,380 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-26 15:24:17,601 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:24:45,542 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:24:47,057 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:24:49,657 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:25:03,547 [WARN] - org.elasticsearch.transport.TcpTransport.onException(TcpTransport.java:611) - exception caught on transport layer [Netty4TcpChannel{localAddress=/192.168.43.136:62596, remoteAddress=/52.130.67.106:9300}], closing connection
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_191]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:1.8.0_191]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_191]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125) ~[netty-buffer-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) [netty-transport-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) [netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.35.Final.jar:4.1.35.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2019-09-26 15:25:03,575 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndex(ElasticSearchHandler.java:210) - None of the configured nodes were available: [{es}{IfFbfGIgTtCZPgMrOchhjw}{3MHlMsnTR0WSFaJGHc2HYQ}{10.0.1.4}{52.130.67.106:9300}{ml.machine_memory=8341352448, ml.max_open_jobs=20, xpack.installed=true}]
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes were available: [{es}{IfFbfGIgTtCZPgMrOchhjw}{3MHlMsnTR0WSFaJGHc2HYQ}{10.0.1.4}{52.130.67.106:9300}{ml.machine_memory=8341352448, ml.max_open_jobs=20, xpack.installed=true}]
+	at org.elasticsearch.client.transport.TransportClientNodesService$RetryListener.onFailure(TransportClientNodesService.java:294) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:59) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1111) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TransportService$8.run(TransportService.java:973) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:688) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.transport.NodeDisconnectedException: [es][52.130.67.106:9300][indices:data/read/search] disconnected
+2019-09-26 15:25:03,582 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndex(ElasticSearchHandler.java:210) - None of the configured nodes were available: [{es}{IfFbfGIgTtCZPgMrOchhjw}{3MHlMsnTR0WSFaJGHc2HYQ}{10.0.1.4}{52.130.67.106:9300}{ml.machine_memory=8341352448, ml.max_open_jobs=20, xpack.installed=true}]
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes were available: [{es}{IfFbfGIgTtCZPgMrOchhjw}{3MHlMsnTR0WSFaJGHc2HYQ}{10.0.1.4}{52.130.67.106:9300}{ml.machine_memory=8341352448, ml.max_open_jobs=20, xpack.installed=true}]
+	at org.elasticsearch.client.transport.TransportClientNodesService$RetryListener.onFailure(TransportClientNodesService.java:294) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:59) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1111) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TransportService$8.run(TransportService.java:973) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:688) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.transport.NodeDisconnectedException: [es][52.130.67.106:9300][indices:data/read/search] disconnected
+2019-09-26 15:25:03,586 [INFO] - com.aiop.lda.util.ElasticSearchHandler.queryEsIndex(ElasticSearchHandler.java:210) - None of the configured nodes were available: [{es}{IfFbfGIgTtCZPgMrOchhjw}{3MHlMsnTR0WSFaJGHc2HYQ}{10.0.1.4}{52.130.67.106:9300}{ml.machine_memory=8341352448, ml.max_open_jobs=20, xpack.installed=true}]
+org.elasticsearch.client.transport.NoNodeAvailableException: None of the configured nodes were available: [{es}{IfFbfGIgTtCZPgMrOchhjw}{3MHlMsnTR0WSFaJGHc2HYQ}{10.0.1.4}{52.130.67.106:9300}{ml.machine_memory=8341352448, ml.max_open_jobs=20, xpack.installed=true}]
+	at org.elasticsearch.client.transport.TransportClientNodesService$RetryListener.onFailure(TransportClientNodesService.java:294) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:59) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1111) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.transport.TransportService$8.run(TransportService.java:973) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:688) ~[elasticsearch-7.2.0.jar:7.2.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.transport.NodeDisconnectedException: [es][52.130.67.106:9300][indices:data/read/search] disconnected
+2019-09-26 15:26:08,930 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:27:24,216 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:27:25,265 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:27:27,483 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:28:52,615 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:29:56,783 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:30:31,224 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:31:10,660 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:31:23,867 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:31:29,825 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:31:49,811 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:0,field:operate,value:
+			 		<button οnclick="editRow(0)" class="btn small blue"> 编辑</button> 
+			 	
+2019-09-26 15:31:59,731 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:0,field:operate,value:
+			 		<button οnclick="editRow(0)" class="btn small blue"> 编辑</button> 
+			 	
+2019-09-26 15:32:35,920 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:0,field:operate,value:
+			 		<button οnclick="editRow(0)" class="btn small blue"> 编辑</button> 
+			 	
+2019-09-26 15:33:07,308 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:35:03,721 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:37:25,487 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:38:35,165 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:39:21,502 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:40:53,549 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:43:25,482 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:44:23,001 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:46:00,744 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:46:22,141 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:47:50,385 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:48:18,930 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:50:11,962 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:50:57,179 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:51:02,125 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:51:14,011 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:54:02,095 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:54:15,194 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:55:17,756 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:57:08,223 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 15:57:38,342 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:01:08,992 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:01:16,209 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:22,465 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:33,786 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:42,473 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:44,089 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:45,999 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:47,968 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:02:49,553 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:03:00,649 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:03:02,813 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:03:04,575 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:03:06,559 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:03:08,578 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:07:42,592 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:07:47,287 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:12:45,897 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:15:27,187 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:15:27,687 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:20:26,126 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:21:56,877 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:23:01,332 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:23:15,046 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:23:48,585 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:25:13,410 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:26:53,843 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:27:17,037 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:28:41,980 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:29:23,898 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:33:01,014 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:35:34,752 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:35:38,583 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:1,field:topicname,value:暴力催收01
+2019-09-26 16:39:19,320 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:39:24,045 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:1,field:topicname,value:暴力催收01
+2019-09-26 16:39:25,489 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:39:42,484 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:39:47,350 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:1,field:topicname,value:暴力催收01
+2019-09-26 16:39:52,704 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:39:58,472 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:40:06,400 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:40:22,264 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:1,field:topicname,value:暴力催收01
+2019-09-26 16:41:26,286 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:41:27,039 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:41:31,595 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:1,field:topicname,value:暴力催收02
+2019-09-26 16:41:32,868 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:298) - querytopic start
+2019-09-26 16:43:47,875 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:299) - querytopic start
+2019-09-26 16:43:47,886 [INFO] - com.aiop.lda.service.BaseConfigProperties.loadConfigFile(BaseConfigProperties.java:23) - *********************** loadConfigFile start !!!
+2019-09-26 16:43:47,897 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:60) - ====ElasticSearchHandler=52.130.67.106
+2019-09-26 16:43:48,416 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:197) - no modules loaded
+2019-09-26 16:43:48,418 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-09-26 16:43:48,418 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-09-26 16:43:48,418 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-09-26 16:43:48,419 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-09-26 16:43:48,419 [INFO] - org.elasticsearch.plugins.PluginsService.logPluginInfo(PluginsService.java:200) - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-09-26 16:43:50,252 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:65) - ====host=52.130.67.106
+2019-09-26 16:43:51,607 [WARN] - com.aiop.lda.util.ElasticSearchHandler.<init>(ElasticSearchHandler.java:67) - ====end host=52.130.67.106
+2019-09-26 16:44:33,895 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:299) - querytopic start
+2019-09-26 16:45:03,637 [INFO] - com.aiop.lda.controller.AgentRestController.updateTopicName(AgentRestController.java:45) - updateTopicName start,index:1,field:topicname,value:暴力催收01
+2019-09-26 16:45:08,088 [INFO] - com.aiop.lda.controller.AgentRestController.querytopic(AgentRestController.java:299) - querytopic start

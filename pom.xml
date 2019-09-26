@@ -114,4 +114,10 @@
 </dependencies>
 
 
+<build>  
+  
+    <finalName>qingxinWeb</finalName>  
+  
+</build>  
+
 </project>
