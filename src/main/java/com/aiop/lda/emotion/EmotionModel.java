@@ -28,7 +28,7 @@ public class EmotionModel {
   
   private static void loadFile(String filepath,List<String> list,String splitStr) {
 	  try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filepath), "utf-8"));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(EmotionModel.class.getClassLoader().getResourceAsStream(filepath), "utf-8"));
 			//read number of document
 			String line=reader.readLine();
 			while(line!=null) {
@@ -54,10 +54,10 @@ public class EmotionModel {
   }
   
   public static void loadEmotionDictory() {
-	  loadFile("src/main/resources/feel/negdict.txt",null,"\t");
-	  loadFile("src/main/resources/feel/posdict.txt",posdict,null);
-	  loadFile("src/main/resources/feel/nodict.txt",nodict,null);
-	  loadFile("src/main/resources/feel/plusdict.txt",plusdict,null);
+	  loadFile("feel/negdict.txt",null,"\t");
+	  loadFile("feel/posdict.txt",posdict,null);
+	  loadFile("feel/nodict.txt",nodict,null);
+	  loadFile("feel/plusdict.txt",plusdict,null);
 	  
 	  HashMap<String,String> param =new HashMap<String, String>();
 		param.put("type", "neg");
@@ -110,7 +110,7 @@ public class EmotionModel {
   }
   
   public static void main(String[] args) {
-	String test="我想咨询一下我的信用卡账单，为什么逾期了";
+	String test="我觉得很开心";
 	System.out.println(predict(test));
 }
   

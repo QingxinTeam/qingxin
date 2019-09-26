@@ -350,7 +350,7 @@ function btable04($http){
 	            edit:false
 	        },{
 	            field: 'word',
-	            title: '停用词'
+	            title: '负面情绪'
 	        },{
 	            field: 'value',
 	            title: '权值'

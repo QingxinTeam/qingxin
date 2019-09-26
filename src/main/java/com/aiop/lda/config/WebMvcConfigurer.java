@@ -21,7 +21,7 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter{
                 SerializerFeature.WriteMapNullValue,
                 SerializerFeature.WriteNullStringAsEmpty,
                 SerializerFeature.WriteNullBooleanAsFalse);
-        List<MediaType> mediaTypes = new ArrayList<>();
+        List<MediaType> mediaTypes = new ArrayList<MediaType>();
         mediaTypes.add(MediaType.parseMediaType("text/plain;charset=utf-8"));
         mediaTypes.add(MediaType.parseMediaType("text/html;charset=utf-8"));
         mediaTypes.add(MediaType.parseMediaType("text/json;charset=utf-8"));
