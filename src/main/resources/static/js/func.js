@@ -95,6 +95,7 @@ function btable($http){
 	        url: 'httpService/querytopic',
 	        toolbar: '#toolbar',
 	        clickEdit: true,
+	        search: true,//是否显示右上角的搜索框  
 	        showToggle: true,
 	        pagination: true,       //显示分页条
 	        showColumns: true,
@@ -261,6 +262,7 @@ function btable02($http){
 	        queryParams:{},
 	        toolbar: '#toolbar02',
 	        clickEdit: true,
+	        search: true,//是否显示右上角的搜索框  
 	        showToggle: true,
 	        pagination: true,       //显示分页条
 	        showColumns: true,
@@ -337,6 +339,7 @@ function btable03($http){
 	        queryParams:{},
 	        toolbar: '#toolbar03',
 	        clickEdit: true,
+	        search: true,//是否显示右上角的搜索框  
 	        showToggle: true,
 	        pagination: true,       //显示分页条
 	        showColumns: true,
@@ -414,6 +417,7 @@ function btable04($http){
 	        url: 'httpService/queryNegWord',
 	        queryParams:{},
 	        toolbar: '#toolbar',
+	        search: true,//是否显示右上角的搜索框  
 	        clickEdit: true,
 	        showToggle: true,
 	        pagination: true,       //显示分页条
