@@ -54,7 +54,19 @@ public class EmotionModel {
   }
   
   public static void loadEmotionDictory() {
-	  loadFile("feel/negdict.txt",null,"\t");
+//	  loadFile("feel/negdict.txt",null,"\t");
+//	  List<HashMap<String,Object>> dbre=new ArrayList<HashMap<String,Object>>();
+//		List<String>ids=new ArrayList<String>();
+//	  for(String key:negdict.keySet()) {
+//		  HashMap<String,Object> o=new HashMap<String, Object>();
+//		  Integer value=negdict.get(key);
+//		   o.put("word", key);
+//		   o.put("value", value);
+//		   o.put("type", "neg");
+//		   ids.add("neg"+o.get("word"));
+//		   dbre.add(o);
+//	  }
+//	  LdaService.insertBatchLineForMap(LdaService.WORD_INDEX_NAME, ids,dbre);
 	  loadFile("feel/posdict.txt",posdict,null);
 	  loadFile("feel/nodict.txt",nodict,null);
 	  loadFile("feel/plusdict.txt",plusdict,null);
@@ -64,7 +76,7 @@ public class EmotionModel {
 		List<Map<String, Object>> result=LdaService.queryData(LdaService.WORD_INDEX_NAME,param);
 		
 		for(Map<String, Object> m:result) {
-			negdict.put((String)m.get("word"), Integer.valueOf((String)m.get("value")));
+			negdict.put((String)m.get("word"), (Integer)m.get("value"));
 		}
   }
   

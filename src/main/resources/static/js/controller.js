@@ -53,7 +53,6 @@
 					"dataType": "json",
 				}
 			}).success(function(data) {
-				 alert("success");
 			});
 	 };
 	 
