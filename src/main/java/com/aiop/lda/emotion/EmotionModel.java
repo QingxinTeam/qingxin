@@ -96,7 +96,20 @@ public class EmotionModel {
 		List<Map<String, Object>> result=LdaService.queryData(LdaService.WORD_INDEX_NAME,param);
 		
 		for(Map<String, Object> m:result) {
-			negdict.put((String)m.get("word"), (Integer)m.get("value"));
+			try {
+				Object value=m.get("value");
+				if(value instanceof Integer) {
+					negdict.put((String)m.get("word"), (Integer)m.get("value"));
+				}else if(value instanceof String) {
+					Integer tmp=Integer.valueOf((String)value);
+					negdict.put((String)m.get("word"), tmp);
+				}
+				
+			}catch(Exception e) {
+				System.out.println(m);
+				System.out.println(e.getMessage());
+			}
+			
 		}
   }
   
