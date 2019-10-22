@@ -119,7 +119,8 @@ public class EmotionModel {
 		  return 1;
 	  }
 	  String[] sd=Fenci.fenci(input).split(" ");
-	  System.out.println(sd.toString());
+	  for(String s:sd)
+	  System.out.println(s);
 	  int negweight=1;
 	  for(int i=0;i<sd.length;i++) {
 		  if(StringsUtil.isBlank(sd[i])) {
@@ -147,15 +148,13 @@ public class EmotionModel {
 				  p=p+1;
 			  }
 			  
-		  }else if(nodict.contains(sd[i])){
-			  p=p-0.5;
 		  }
 	  }
 	  return p;
   }
   
   public static void main(String[] args) {
-	String test="我觉得很开心";
+	String test="那你们也不能天天打电话给我呀";
 	System.out.println(predict(test));
 }
   
